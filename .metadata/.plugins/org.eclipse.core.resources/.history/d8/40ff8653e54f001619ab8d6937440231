@@ -1,0 +1,14 @@
+package test;
+
+public class Main {
+	
+	public static void main(String args[]){
+		
+		Person per1 = new Person();
+		per1.setAge("22");
+		per1.setName("ะกร๗");
+		per1.tell();
+		System.out.println("my name "+per1.getName());
+	}
+
+}

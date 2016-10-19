@@ -1,0 +1,8 @@
+<resources>
+     <declare-styleable name="clearableEditText">
+        <attr name="clearBtnDrawable" format="reference|color" />
+        <attr name="clearBtnDrawableWidth" format="dimension" />
+        <attr name="clearBtnDrawableHeight" format="dimension" />
+    </declare-styleable>    
+    
+</resources>

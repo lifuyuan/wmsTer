@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ash">#929292</color>
+    <color name="babyblue">#00A9FE</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="bg_color">#F8F8F8</color>
+    <color name="bg_topbar">#f9f9f9</color>
+    <color name="black">#000000</color>
+    <color name="black_60">#60000000</color>
+    <color name="blank_light">#666666</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_line">#4285f4</color>
+    <color name="blue_pressed">#3d6cba</color>
+    <color name="btn_login_bg_color">#4285F4</color>
+    <color name="btn_login_pressed_color">#4241F4</color>
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+    <color name="btn_pressed_false">#4285F4</color>
+    <color name="btn_pressed_true">#3366cc</color>
+    <color name="btn_register_pressed_color">#F97706</color>
+    <color name="btn_zhichi_bg_color">#ff2d55</color>
+    <color name="color_blue">#66B2FF</color>
+    <color name="color_gray">#CFCFCF</color>
+    <color name="color_pressed">#9c000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="content_jianjie">#636363</color>
+    <color name="control_bg_color">#ffffff</color>
+    <color name="dark_grey">#616264</color>
+    <color name="darkgray">#cccc</color>
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="et_background">#CDCDCD</color>
+    <color name="gray">#808080</color>
+    <color name="gray_base_backgroud">#FAFAFA</color>
+    <color name="gray_deep">#EEEEEE</color>
+    <color name="gray_light">#b2b2b2</color>
+    <color name="gray_line">#D1D1D1</color>
+    <color name="gray_main">#95A5A5</color>
+    <color name="gray_text">#bcbcbc</color>
+    <color name="green_main">#85CAEF</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="lightseagreen">#20B2AA</color>
+    <color name="main_text_color">#636363</color>
+    <color name="mazarine">#16A8F3</color>
+    <color name="myred">#eb4f38</color>
+    <color name="normal_text">#FF758493</color>
+    <color name="orange">#FFA500</color>
+    <color name="orange_main">#f99406</color>
+    <color name="orange_pressed">#bd7714</color>
+    <color name="progress_bg_color">#e1e1e1</color>
+    <color name="progress_txt_color">#f99406</color>
+    <color name="progress_txtname_color">#b2b2b2</color>
+    <color name="red">#FF0000</color>
+    <color name="red_main">#ff2d55</color>
+    <color name="red_txt">#b61d1d</color>
+    <color name="ripple_color">#ffeeeeee</color>
+    <color name="royalblue">#4169E1</color>
+    <color name="scan_tab_pressed">#D5D5D5</color>
+    <color name="split_line_color">#e2e2e2</color>
+    <color name="steelblue">#4682B4</color>
+    <color name="text_color_baise_fffefe">#fffefe</color>
+    <color name="text_color_heise_504f4f">#504f4f</color>
+    <color name="text_color_hongse_ff4318">#ff4318</color>
+    <color name="text_color_huangse_ff8800">#ff8800</color>
+    <color name="text_color_qianhui_a3a4a4">#a3a4a4</color>
+    <color name="text_color_shenhui_677582">#677582</color>
+    <color name="text_color_shurukuang_aeb6bd">#aeb6bd</color>
+    <color name="text_color_zhongheise_461bd4">#461bd4</color>
+    <color name="text_color_zhonghongse_461b04">#461b04</color>
+    <color name="title_bg_color">#3A3B3F</color>
+    <color name="title_txt_color">#333333</color>
+    <color name="titleinner_bg_color">#F3F3F3</color>
+    <color name="transparency">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="user_detail_public_bg">#f3f3f3</color>
+    <color name="user_list_public_bg">#e5e6e7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="yellow_txt">#EB5701</color>
+    <declare-styleable name="AutoLayout_Layout"><attr name="layout_auto_basewidth">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr><attr name="layout_auto_baseheight">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr></declare-styleable>
+    <declare-styleable name="CheckableTextView"><attr name="personality">
+            <enum name="radio" value="0"/>
+            <enum name="check" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="border_overlay"/></declare-styleable>
+    <declare-styleable name="DotView"><attr format="dimension" name="dot_radius"/><attr format="dimension" name="dot_span"/><attr format="integer" name="dot_unselected_color"/><attr format="integer" name="dot_selected_color"/></declare-styleable>
+    <declare-styleable name="GenericDraweeView"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr format="string" name="placeholderImageScaleType"/><attr format="reference" name="retryImage"/><attr format="string" name="retryImageScaleType"/><attr format="reference" name="failureImage"/><attr format="string" name="failureImageScaleType"/><attr format="reference" name="progressBarImage"/><attr format="string" name="progressBarImageScaleType"/><attr format="integer" name="progressBarAutoRotateInterval"/><attr format="string" name="actualImageScaleType"/><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/></declare-styleable>
+    <declare-styleable name="LoadingLayout"><attr format="reference" name="loadingView"/><attr format="reference" name="errorView"/><attr format="reference" name="retryView"/><attr format="reference" name="emptyView"/></declare-styleable>
+    <declare-styleable name="LockView"><attr format="color|reference" name="lock_nodeNormal"/><attr format="color|reference" name="lock_nodePressed"/><attr format="color|reference" name="lock_nodeWrong"/><attr format="color" name="lock_lineColor"/><attr format="dimension" name="lock_lineWidth"/><attr format="dimension" name="lock_padding"/><attr format="dimension" name="lock_spacing"/></declare-styleable>
+    <declare-styleable name="MoreActionView"><attr format="dimension" name="more_action_dot_radius"/><attr format="dimension" name="more_action_dot_span"/><attr format="reference|color" name="more_action_dot_color"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="color" name="pstsTabSelectColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable>
+    <declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable>
+    <declare-styleable name="PtrFrameLayout"><attr format="reference" name="ptr_header"/><attr format="reference" name="ptr_content"/><attr format="float" name="ptr_resistance"/><attr format="float" name="ptr_ratio_of_header_height_to_refresh"/><attr format="integer" name="ptr_duration_to_close"/><attr format="integer" name="ptr_duration_to_close_header"/><attr format="boolean" name="ptr_pull_to_fresh"/><attr format="boolean" name="ptr_keep_header_when_refresh"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="ScrollHeaderFrame"><attr format="reference" name="scrollheaderframe_header"/><attr format="reference" name="scrollheaderframe_conent_container"/><attr format="reference" name="scrollheaderframe_footer"/><attr format="boolean" name="scrollheaderframe_disable"/></declare-styleable>
+    <declare-styleable name="SliderBanner"><attr format="reference" name="slider_banner_indicator"/><attr format="reference" name="slider_banner_pager"/><attr format="integer" name="slider_banner_time_interval"/></declare-styleable>
+    <declare-styleable name="clearableEditText"><attr format="reference|color" name="clearBtnDrawable"/><attr format="dimension" name="clearBtnDrawableWidth"/><attr format="dimension" name="clearBtnDrawableHeight"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bg_spacing_height">15dip</dimen>
+    <dimen name="block_height_normal">34dip</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+    <dimen name="edittext_height_normal">51dip</dimen>
+    <dimen name="footer_height">50dip</dimen>
+    <dimen name="gategory_ad_height">96dip</dimen>
+    <dimen name="header_footer_internal_padding">20dp</dimen>
+    <dimen name="header_footer_left_right_padding">25dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">10dp</dimen>
+    <dimen name="height_button_authcode">30dip</dimen>
+    <dimen name="height_common">40dip</dimen>
+    <dimen name="height_edittext_nommal">20dip</dimen>
+    <dimen name="height_google">48dip</dimen>
+    <dimen name="height_icon">20dip</dimen>
+    <dimen name="height_image">74dip</dimen>
+    <dimen name="height_image_big">120dip</dimen>
+    <dimen name="height_image_com">100dip</dimen>
+    <dimen name="height_large_spancing">60dip</dimen>
+    <dimen name="height_logout">55dip</dimen>
+    <dimen name="height_max_large_spancing">88dip</dimen>
+    <dimen name="height_menu_item">60dip</dimen>
+    <dimen name="height_more_large_spancing">88dip</dimen>
+    <dimen name="height_small">24dip</dimen>
+    <dimen name="height_spancing">18dip</dimen>
+    <dimen name="height_touch">32dip</dimen>
+    <dimen name="icon_project_side_length">80dip</dimen>
+    <dimen name="icon_screen_spancing">15dip</dimen>
+    <dimen name="icon_text_large_spacing">13dip</dimen>
+    <dimen name="icon_text_spacing_small">5dip</dimen>
+    <dimen name="icon_width_normal">90dip</dimen>
+    <dimen name="image_height_large">178dip</dimen>
+    <dimen name="image_side_lenght_normal">72dip</dimen>
+    <dimen name="index_ad_height">72dip</dimen>
+    <dimen name="index_hor_height">142dip</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="item_height_list_nomal">106dip</dimen>
+    <dimen name="item_spancing_nomal">17dip</dimen>
+    <dimen name="line_1">1dip</dimen>
+    <dimen name="line_2">2dip</dimen>
+    <dimen name="line_3">3dip</dimen>
+    <dimen name="main_text_h3">15sp</dimen>
+    <dimen name="main_text_h4">13sp</dimen>
+    <dimen name="main_text_h5">14sp</dimen>
+    <dimen name="main_text_h6">12sp</dimen>
+    <dimen name="main_text_h7">11sp</dimen>
+    <dimen name="main_text_h8">10sp</dimen>
+    <dimen name="main_text_h9">20sp</dimen>
+    <dimen name="margin_big">16dip</dimen>
+    <dimen name="margin_control">4dip</dimen>
+    <dimen name="margin_edit">8dip</dimen>
+    <dimen name="margin_screen">12dip</dimen>
+    <dimen name="margin_screen_nomarl">14dip</dimen>
+    <dimen name="margin_small">2dip</dimen>
+    <dimen name="module_spacing_one">23dip</dimen>
+    <dimen name="one_dip">1dip</dimen>
+    <dimen name="padding_edittext_spancing">14.5dip</dimen>
+    <dimen name="padding_radio_text_left">32dip</dimen>
+    <dimen name="pie_chart_width">6dip</dimen>
+    <dimen name="radiu_bottom">8dip</dimen>
+    <dimen name="radiu_height">9dip</dimen>
+    <dimen name="radiu_spacing">3dip</dimen>
+    <dimen name="screen_control_spacing">15dip</dimen>
+    <dimen name="screen_control_spacing_top">40dip</dimen>
+    <dimen name="sec_list_left_spancing">65dip</dimen>
+    <dimen name="sec_title_height">40dip</dimen>
+    <dimen name="spacing_small">10dip</dimen>
+    <dimen name="split_bg_spacing">11dip</dimen>
+    <dimen name="tab_height">40dip</dimen>
+    <dimen name="tab_height_find">57dip</dimen>
+    <dimen name="tab_line_anim_height">2dip</dimen>
+    <dimen name="text_com">15sp</dimen>
+    <dimen name="text_h1">18sp</dimen>
+    <dimen name="text_h2">22sp</dimen>
+    <dimen name="text_h3">26sp</dimen>
+    <dimen name="text_h4">30sp</dimen>
+    <dimen name="text_h5">34sp</dimen>
+    <dimen name="text_img_spancing">13dip</dimen>
+    <dimen name="text_lar">16sp</dimen>
+    <dimen name="text_little">8sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_text_large_spacing">21dip</dimen>
+    <dimen name="textview_padding_spcing">9dip</dimen>
+    <dimen name="title_h2_spacing">13dip</dimen>
+    <dimen name="title_height">40dip</dimen>
+    <dimen name="title_text_h1">18sp</dimen>
+    <dimen name="title_text_h2">16.5sp</dimen>
+    <dimen name="title_text_morelarge_h1">19sp</dimen>
+    <dimen name="ui_radius">2dip</dimen>
+    <dimen name="vertical_line_height">30dip</dimen>
+    <dimen name="width_button_authcode">90dip</dimen>
+    <dimen name="width_button_login">284dip</dimen>
+    <dimen name="width_line_login">74dip</dimen>
+    <dimen name="width_title">100dip</dimen>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="split" type="id">false</item>
+    <item name="webview" type="id"/>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="app_name">wms</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="confirm">确定</string>
+    <string name="cube_ptr_hours_ago"> 小时之前</string>
+    <string name="cube_ptr_last_update">上次更新: </string>
+    <string name="cube_ptr_minutes_ago"> 分钟之前</string>
+    <string name="cube_ptr_pull_down">下拉</string>
+    <string name="cube_ptr_pull_down_to_refresh">下拉刷新</string>
+    <string name="cube_ptr_refresh_complete">更新完成.</string>
+    <string name="cube_ptr_refreshing">加载中...</string>
+    <string name="cube_ptr_release_to_refresh">释放刷新</string>
+    <string name="cube_ptr_seconds_ago"> 秒之前</string>
+    <string name="cube_views_load_more_click_to_load_more">Click to load more</string>
+    <string name="cube_views_load_more_error">Load error, click to retry</string>
+    <string name="cube_views_load_more_loaded_empty">It is empty. :(</string>
+    <string name="cube_views_load_more_loaded_no_more">All the data has been loaded</string>
+    <string name="cube_views_load_more_loading">loading...</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_network">您的网络不好，请稍后再试</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="exception_hint">异常提示</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="forgot_next">下一步</string>
+    <string name="hint">提示</string>
+    <string name="input_quantity">设置成功</string>
+    <string name="loaddata_error">数据加载错误</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="msg">消息</string>
+    <string name="on_login">登录</string>
+    <string name="on_register">注册</string>
+    <string name="project_norm">限额</string>
+    <string name="project_remain">剩余</string>
+    <string name="project_scheduled_time">预计回报发送时间：</string>
+    <string name="project_shipping_amount">配送金额：</string>
+    <string name="project_support">支持</string>
+    <string name="project_to_vote">去跟投</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">Pull to load more…</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">Release to load more…</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="register_account">账号</string>
+    <string name="register_authcode">验证码</string>
+    <string name="register_hint">还没账号？立即注册</string>
+    <string name="register_password">密码</string>
+    <string name="sao">扫一扫</string>
+    <string name="scan">二维码扫描</string>
+    <string name="scan_text">将二维码放入框内,即可自动扫描</string>
+    <string name="scanprint">scanprint</string>
+    <string name="setting_su">设置成功</string>
+    <string name="stock">stocktaking</string>
+    <string name="style_hint">style为数字</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="try_again">再试一次</string>
+    <string name="verify">验证</string>
+    <string name="wms">WMS</string>
+    <string name="yijiazaiwancheng">已加载完成</string>
+    <string name="zhengzaijiazai">正在加载...</string>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="AppThemeBackground" parent="AppTheme">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+    <style name="AppThemeBackgroundWhite" parent="AppTheme">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="Button_Black" parent="Button_Blue">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Button_Blue">
+        <item name="android:background">@color/blue_line</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_com</item>
+    </style>
+    <style name="Button_Blue_Color" parent="Button_Blue">
+        <item name="android:background">@color/blue_line</item>
+    </style>
+    <style name="Button_White" parent="Button_Blue">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/blue_line</item>
+    </style>
+    <style name="CategoryListStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_google</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/category_list_items</item>
+        <item name="android:textColor">@color/category_list_items_text</item>
+    </style>
+    <style name="Dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/dialog_ios</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+     <item name="android:windowBackground"> @android:color/transparent </item>
+     <item name="android:backgroundDimEnabled">false</item>   
+     </style>
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">@dimen/text_com</item>
+    </style>
+    <style name="DialogText.Title">
+        <item name="android:textSize">@dimen/text_h1</item>
+    </style>
+    <style name="DialogTransparent" parent="@style/Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ProgressDialog" parent="@style/Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <style name="Text_Com">
+        <item name="android:textSize">@dimen/text_com</item>
+    </style>
+    <style name="Text_Com_Center" parent="@style/Text_Com">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_Com_Center_Gray" parent="@style/Text_Com_Center">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Center_Sing" parent="@style/Text_Com_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Com_Center_Sing_Blue" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_Com_Center_Sing_Gray" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Center_Sing_White" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_Com_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Text_Com_Left_Ash" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_Com_Left_Blue" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/babyblue</item>
+    </style>
+    <style name="Text_Com_Left_Gray" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Left_Sing" parent="@style/Text_Com_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Com_Left_Sing_Ash" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_Com_Left_Sing_Blue" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/babyblue</item>
+    </style>
+    <style name="Text_Com_Left_Sing_Bold" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text_Com_Left_Sing_Gray" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Left_Sing_Gray_Dark" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+    <style name="Text_Com_Left_Sing_White" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_Com_Left_Top" parent="@style/Text_Com">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="Text_Com_Left_Top_Ash" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_Com_Left_Top_Gray" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Left_Top_Sing" parent="@style/Text_Com_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="Text_Com_Left_Top_Sing_Blue" parent="@style/Text_Com_Left_Top_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_Com_Left_Top_White" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_Com_Right" parent="@style/Text_Com">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <style name="Text_Com_Right_Red" parent="@style/Text_Com_Right">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="Text_Com_Right_Sing" parent="@style/Text_Com_Right">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Com_Right_Sing_Ash" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_Com_Right_Sing_Blue" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_Com_Right_Sing_Gray" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Com_Right_Sing_White" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_Home_Text">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <style name="Text_Lar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_lar</item>
+    </style>
+    <style name="Text_Lar_Left" parent="@style/Text_Lar">
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Text_Lar_Left_Gray" parent="@style/Text_Lar_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Left_Small_Sing">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Left_Small_Sing_Gray">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Left_TitleSecd_Sing">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Login_Operation">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Login_Title">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Main_Notice">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Message_Left_Sing_Green">
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Message_One">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <style name="Text_Neighbour_Left_Sing_DarkBlue">
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_PayTip">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <style name="Text_Repair_Adapt">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Repair_Title">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Right_Small_Sing_Gray">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Small_Center_Sing" parent="@style/Text_Small_Left">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Small_Center_Sing_Blue" parent="@style/Text_Small_Center_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_Small_Center_Sing_Gray" parent="@style/Text_Small_Center_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Small_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <style name="Text_Small_Left_Gray" parent="@style/Text_Small_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Small_Left_Sing" parent="@style/Text_Small_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Small_Left_Sing_Blue" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="Text_Small_Left_Sing_DeepskyBlue" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_Small_Left_Sing_Gray" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_Small_Left_Sing_White" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_Small_Left_Top" parent="@style/Text_Small_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="Text_Small_Left_Top_Gray" parent="@style/Text_Small_Left_Gray">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="Text_Small_Right" parent="@style/Text_Com">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <style name="Text_Small_Right_Sing">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Small_Right_Sing_Gray">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_Small_Right_Sing_White">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text__h1_black_center" parent="@style/black_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text__h1_white_center" parent="@style/white_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_e1_gray">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/ic_circle_gray</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_e1_yellow">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/ic_circle_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_e2_black">
+        <item name="android:textColor">#9A9A9A</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="Text_e2_gray">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="Text_h1_Center" parent="@style/Text_h1_Left">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_h1_Center_Dodgerblue" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/dodgerblue</item>
+    </style>
+    <style name="Text_h1_Center_Gray" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_h1_Center_Sing" parent="@style/Text_h1_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h1_Center_Sing_Blue" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/deepskyblue</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h1_Center_Sing_BlueSea" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/lightseagreen</item>
+    </style>
+    <style name="Text_h1_Center_Sing_Gray" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_h1_Center_Sing_White" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h1_Left" parent="@style/Text_Com_Left">
+        <item name="android:textSize">@dimen/text_h1</item>
+    </style>
+    <style name="Text_h1_Left_Bottom" parent="@style/Text_h1_Left">
+        <item name="android:gravity">left|bottom</item>
+    </style>
+    <style name="Text_h1_Left_Bottom_Sing" parent="Text_h1_Left_Bottom">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h1_Left_Red" parent="@style/Text_h1_Left">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="Text_h1_Left_Sing" parent="@style/Text_h1_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h1_Left_Sing_Ash" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+    <style name="Text_h1_Left_Sing_Blue" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_h1_Left_Sing_White" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h1_Left_Top" parent="@style/Text_h1_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="Text_h1_Left_White" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h1_Right" parent="@style/Text_h1_Left">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_h1_Right_Sing" parent="@style/Text_h1_Right">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h1_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+    </style>
+    <style name="Text_h1_white" parent="@style/white_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+    </style>
+    <style name="Text_h2_Center" parent="@style/Text_h2_Left">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_h2_Center_Sing" parent="@style/Text_h2_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h2_Center_Sing_White" parent="@style/Text_h2_Center_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h2_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+    </style>
+    <style name="Text_h2_Left_Sing" parent="@style/Text_h2_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Text_h2_Left_Sing_Blue" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+    <style name="Text_h2_Left_Sing_White" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h2_Left_Sing_gray" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="Text_h2_Left_White" parent="@style/Text_h2_Left">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Text_h2_black" parent="@style/black_text">
+        <item name="android:textSize">@dimen/title_text_h2</item>
+    </style>
+    <style name="Text_h2_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/title_text_h2</item>
+    </style>
+    <style name="Text_h3_blank" parent="@style/black_text">
+        <item name="android:textSize">@dimen/main_text_h3</item>
+    </style>
+    <style name="Text_h3_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h3</item>
+    </style>
+    <style name="Text_h3_orange" parent="@style/orange_text">
+        <item name="android:textSize">@dimen/main_text_h3</item>
+    </style>
+    <style name="Text_h3_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h3</item>
+    </style>
+    <style name="Text_h3_write" parent="@style/white_text">
+        <item name="android:textSize">@dimen/main_text_h3</item>
+    </style>
+    <style name="Text_h4" parent="@style/Text_Com">
+        <item name="android:textSize">@dimen/text_h4</item>
+    </style>
+    <style name="Text_h4_Center" parent="@style/Text_h4">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text_h4_Left_Bottom_Sing" parent="Text_h4_Left_Sing">
+        <item name="android:gravity">left|bottom</item>
+    </style>
+    <style name="Text_h4_Left_Sing" parent="Text_h4">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Text_h4_blank" parent="@style/black_text">
+        <item name="android:textSize">@dimen/main_text_h4</item>
+    </style>
+    <style name="Text_h4_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h4</item>
+    </style>
+    <style name="Text_h4_orange" parent="@style/orange_text">
+        <item name="android:textSize">@dimen/main_text_h4</item>
+    </style>
+    <style name="Text_h4_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h4</item>
+    </style>
+    <style name="Text_h4_white" parent="@style/white_text">
+        <item name="android:textSize">@dimen/main_text_h4</item>
+    </style>
+    <style name="Text_h5_blank" parent="@style/black_text">
+        <item name="android:textSize">@dimen/main_text_h5</item>
+    </style>
+    <style name="Text_h5_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h5</item>
+    </style>
+    <style name="Text_h5_orange" parent="@style/orange_text">
+        <item name="android:textSize">@dimen/main_text_h5</item>
+    </style>
+    <style name="Text_h5_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h5</item>
+    </style>
+    <style name="Text_h5_write" parent="@style/white_text">
+        <item name="android:textSize">@dimen/main_text_h5</item>
+    </style>
+    <style name="Text_h6_blank" parent="@style/black_text">
+        <item name="android:textSize">@dimen/main_text_h6</item>
+    </style>
+    <style name="Text_h6_blue" parent="@style/blue_text">
+        <item name="android:textSize">@dimen/main_text_h6</item>
+    </style>
+    <style name="Text_h6_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h6</item>
+    </style>
+    <style name="Text_h6_orange" parent="@style/orange_text">
+        <item name="android:textSize">@dimen/main_text_h6</item>
+    </style>
+    <style name="Text_h6_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h6</item>
+    </style>
+    <style name="Text_h7_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h7</item>
+    </style>
+    <style name="Text_h7_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h7</item>
+    </style>
+    <style name="Text_h7_write" parent="@style/white_text">
+        <item name="android:textSize">@dimen/main_text_h7</item>
+    </style>
+    <style name="Text_h8_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h8</item>
+    </style>
+    <style name="Text_h9_blank_light" parent="@style/black_light_text">
+        <item name="android:textSize">@dimen/main_text_h9</item>
+    </style>
+    <style name="Text_h9_gray" parent="@style/gray_text">
+        <item name="android:textSize">@dimen/main_text_h9</item>
+    </style>
+    <style name="Text_h9_red" parent="@style/red_text">
+        <item name="android:textSize">@dimen/main_text_h9</item>
+    </style>
+    <style name="Text_h9_write" parent="@style/white_text">
+        <item name="android:textSize">@dimen/main_text_h9</item>
+    </style>
+    <style name="Text_large_h1_black" parent="@style/black_text">
+        <item name="android:textSize">@dimen/title_text_morelarge_h1</item>
+    </style>
+    <style name="TopbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_google</item>
+        <item name="android:background">#f6f6f7</item>
+    </style>
+    <style name="black_light_text">
+        <item name="android:textColor">@color/blank_light</item>
+    </style>
+    <style name="black_text">
+        <item name="android:textColor">@color/title_txt_color</item>
+    </style>
+    <style name="blue_text">
+        <item name="android:textColor">@color/blue_line</item>
+    </style>
+    <style name="detailinfo_textstyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="gray_text">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="main_text_color">
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+    <style name="orange_text">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+    <style name="push_alias">
+		<item name="android:hint">@string/alias_hint</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="push_style">
+		<item name="android:hint">@string/style_hint</item>
+		<item name="android:inputType">number</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="push_tag">
+		<item name="android:hint">@string/tag_hint</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="red_text">
+        <item name="android:textColor">@color/btn_zhichi_bg_color</item>
+    </style>
+    <style name="reg_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_drawable</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:maxHeight">13dp</item>
+        <item name="android:minHeight">13dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/evaluate_ratingbar_small</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+    <style name="screen_padding_spacing">
+        <item name="android:paddingLeft">@dimen/screen_control_spacing</item>
+        <item name="android:paddingRight">@dimen/screen_control_spacing</item>
+    </style>
+    <style name="title_text_color">
+        <item name="android:textColor">@color/title_txt_color</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+    <style name="view_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#f3f3f3</item>
+    </style>
+    <style name="view_divider_margin" parent="view_divider">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+    </style>
+    <style name="white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+package test;
+
+public class Main {
+	
+	public static void main(String args[]){
+		
+		String str1 = "adcfdfdfc";
+		System.out.println(str1.indexOf("c"));
+		}
+
+}

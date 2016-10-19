@@ -1,0 +1,7 @@
+#Wed Oct 19 07:34:40 CST 2016
+base.0=D\:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9351eb613913baa5c973c0dcacabfa6a5c2e3243
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c4a4e163ab1721b1d8d41b4e9c0adfd6887652b0\\classes.dex
+base.1=D\:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c4a4e163ab1721b1d8d41b4e9c0adfd6887652b0
+file.0=D\:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9351eb613913baa5c973c0dcacabfa6a5c2e3243\\classes.dex

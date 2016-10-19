@@ -1,0 +1,10 @@
+package test;
+
+public class Person {
+	
+	String name;
+	String age;
+	public void tell(){
+		System.out.print("ĞÕÃû"+name+"ÄêÁä"+age);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StackManager.java&apos; to &apos;WmsTerminal/src/com.wmsterminal.func&apos;&#x0D;&#x0A;- Original project: &apos;AllFinish&apos;&#x0D;&#x0A;- Destination element: &apos;WmsTerminal/src/com.wmsterminal.func&apos;&#x0D;&#x0A;- Original element: &apos;com.allfinish.tools.StackManager.java&apos;" description="Copy compilation unit" destination="=WmsTerminal/src&lt;com.wmsterminal.func" element1="/src&lt;com.allfinish.tools{StackManager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1469782347379" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cube_ptr_simple_loading.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cube_ptr_classic_default_header.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cube_views_load_more_default_footer.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\ptr_sdk\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_views_load_more_default_footer.xml"
+    }
+]

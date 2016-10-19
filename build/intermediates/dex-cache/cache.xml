@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f7e9902f3680722fced091a1c32f3b0e91c3b4c0">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c4a4e163ab1721b1d8d41b4e9c0adfd6887652b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\jpush-android-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="46ba8dda9da3802d03bd5d73e258c72cb5605416">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\jpush-android-2.1.0_053143ad8c7dda2acece8186aea01446aae0bed0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\fresco-v0.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a6cb0903189bd89f75f67bc4999c99d5a0314701">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\fresco-v0.5.0_51d0a3dc65b30e84d4f2fd518c11824b91ff38cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\BarcodeScan.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7292e1e33b683e02a82c04adfad70ede73f9bc99">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\BarcodeScan_7ed68d2c0db09a56f08656d15dad1609ffe461a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\fluent-hc-4.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7bfdfa49de6d720ad3c8cedb6a5238eec564dfed">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\fluent-hc-4.5.2_bf4320d36fd02ea3c986c1b301ea84980120ad1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\httpmime-4.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="22b4c53dd9b6761024258de8f9240c3dce6ea368">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\httpmime-4.5.2_5bd7cb4e0b18ade7b39f5fb687e13d547e61fd6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\httpcore-4.4.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b31526a230871fbe285fbcbe2813f9c0839ae9b0">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.4.4_2dcb6ff12b85c9ae942ac01085a3205d1381853e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\gson-2.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.2.1_d3fa547b51aa20c045b5cbfb2f2f711e6e46f85f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\okhttp-2.7.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\okhttp-2.7.5_1e67e5e3e143162fc6905e7419ae202657f0c84a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\ptr_sdk\unspecified\jars\libs\android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac19464c18c9a61d91ea575bdc84f4adb457b0a1">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\android-support-v4_b981f4a658b30a345a3e5486e70037b48ec541d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\ormlite-core-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-core-4.48_9e2ebdc4fdfa0b2c8ea35c5b8b724eb997d97392\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\imagepipeline-v0.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bd11b9b1d75232bd3a9322f0f2f12ab670e760cd">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\imagepipeline-v0.5.0_308670dc9857efcc9e81d4c36781c8b38990f520\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\httpclient-win-4.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="80635f3fdebcb3687ca3246214e597916504b996">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-win-4.5.2_ca1e99e33e6c2750e1bacb5e0fdd13a3781449d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\drawee-v0.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6d2dff867020983da572bf4d721809b3dab74caf">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\drawee-v0.5.0_1c01d7bee21f668acdc0f4088c5363ac26d7da98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\okhttp-urlconnection-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cb20062e14c523637b7643295418097b48cccec2">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\okhttp-urlconnection-2.2.0_d4c7228a284c8d5ffdea6104ce9886ad76b8abe3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\httpclient-cache-4.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bd50ea83908dbf2f387a333216e66d2f0c5079bd">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-cache-4.5.2_c355799714a00dbc98161188fb68ed036dd44760\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\okio-1.9.0_9d2caf79487830018e7d73bbaf24f88bd7614b95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\commons-logging-1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4bfc12adfe4842bf07b657f0369c4cb522955686">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\commons-logging-1.2_4c00c36ae62b9306c27ae9a80d42b4ed7ebe3bf0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_52adcc861c0e4e6d5341c5d68ba02fe8b2a78c27\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="50f3db56b85c370652ea08b67d2b4dfda018eaf7">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9351eb613913baa5c973c0dcacabfa6a5c2e3243\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\fastjson-1.2.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b74bde9cceb2f9ec1077a9c7c3a007c251531ba6">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\fastjson-1.2.6_bc16d892243023dd50174c60f7d792a59796c3a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\bolts-android-1.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3299434a5ced5ea151e559adb4b840b16bfb94df">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\bolts-android-1.1.4_186a874594f917077b0b8f26c765f7fbb0438e7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\jna-4.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1c12d070e602efd8021891cdd7fd18bc129372d4">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\jna-4.1.0_bda6ce714f9da82d4849476bf912971a173cc026\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\ormlite-android-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-android-4.48_9d6fa5c043d23cdea0c3ad31f9c4bc8aef7bcfdf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\ptr_sdk\unspecified\jars\libs\clog-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f73c2c2abdd0e34c481ee4362f44bf7e4546f4e6">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\clog-1.0.2_3504786e3cebf943fc87f847c96521e7f8857d20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\android-support-v7-appcompat.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="21297ae2bf22a0ce81c9b59992cf0693eec45d5b">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v7-appcompat_d07717bee7d1eb71d5d1caf58c2c644ba349751e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f086e018e187da53a1432c188023c86d1fa3ff73">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\library-2.4.0_9613928a0b56b2ff733e012af10a609a229e1e86\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\Zxing-3.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\Zxing-3.1.0_44aa1e465f1554867b22537ed544e0e20e6d8212\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.3_75d753d8aaf8bf8f21adcf74fff476ab8fc31f53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\library-1.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\library-1.0.19_593147bd6d16d07004c80b71ea284f38a606f198\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\httpclient-4.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="733db77aa8d9b2d68015189df76ab06304406e50">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.5.2_4f855524958d73dedc480b6b7bf35b8f4cf96981\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\commons-codec-1.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9ce04e34240f674bc72680f8b843b1457383161a">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\commons-codec-1.9_62da9c1e619ff9acb50a6f6801bcd54d3b8f114b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\WmsTer\fresco_sdk\unspecified\jars\libs\fbcore-v0.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a6c4dd3bc412bba26a19994548511a987f780fdc">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\8\fbcore-v0.5.0_962f044a585e9a4d82d45d0c539468382f29ec36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_f577f42b9e70901d699b9c6501efdaaa7ee846ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\WmsTer\WmsTerminal\libs\jna-platform-4.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="23457ad1cf75c2c16763330de5565a0e67b4bc0a">
+        <dex dex="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\2\jna-platform-4.1.0_e5091a714e35e5ec9bee27bf54dedcd0e9edd5e0\classes.dex" />
+    </item>
+
+</items>

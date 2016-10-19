@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HadwareControll.java&apos; to &apos;WmsTerminal/src/com.wmsterminal.func&apos;&#x0D;&#x0A;- Original project: &apos;BarcodeScanDemo&apos;&#x0D;&#x0A;- Destination element: &apos;WmsTerminal/src/com.wmsterminal.func&apos;&#x0D;&#x0A;- Original element: &apos;com.android.barcodescandemo.HadwareControll.java&apos;" description="Copy compilation unit" destination="=WmsTerminal/src&lt;com.wmsterminal.func" element1="/src&lt;com.android.barcodescandemo{HadwareControll.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1469171419634" units="1" version="1.0"/>
+</session>

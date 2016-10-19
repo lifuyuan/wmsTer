@@ -1,0 +1,436 @@
+package com.wmsterminal.activity.wms;
+
+import java.io.IOException;
+
+
+
+import java.sql.DatabaseMetaData;
+
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import android.R.color;
+import android.annotation.SuppressLint;
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.res.AssetFileDescriptor;
+import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.CompoundButton;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.RelativeLayout.LayoutParams;
+import com.j256.ormlite.android.apptools.OpenHelperManager;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+import com.wmsterminal.R;
+import com.wmsterminal.base.activity.BaseActivity;
+import com.wmsterminal.common.thread.NetWorkPost;
+import com.wmsterminal.common.thread.TaskExecutor;
+import com.wmsterminal.func.HadwareControll;
+import com.wmsterminal.func.db.DatabaseHelper;
+import com.wmsterminal.model.InputRequest;
+import com.wmsterminal.model.SqliteTest;
+import com.wmsterminal.util.IntentUtil;
+import com.wmsterminal.util.RequestUtil;
+import com.wmsterminal.util.SharedUtil;
+
+public class WmsInputActivity extends BaseActivity implements View.OnClickListener {
+
+	public static final String KEY_RECEIVEER_ACTION = "com.idatachina.SCANKEYEVENT";
+	
+	@ViewInject(R.id.et_shelfnum_input)
+	private EditText etShelfNum;
+	
+	@ViewInject(R.id.et_barcode_input)
+	private EditText etBarCode;
+	
+	@ViewInject(R.id.et_quantity_input)
+	private EditText etQuantity;
+	
+	@ViewInject(R.id.tv_date_input)
+	private TextView tvDate;
+	
+	@ViewInject(R.id.rb_group_input)
+	private RadioGroup rbGroup;
+	
+	@ViewInject(R.id.rb_broken_input)
+	private RadioButton rbBroken;
+	
+	@ViewInject(R.id.rb_shelf_input)
+	private RadioButton rbShelf;
+	
+	@ViewInject(R.id.rb_nomatch_input)
+	private RadioButton rbNoMatch;
+	
+	@ViewInject(R.id.rb_notfound_input)
+	private RadioButton rbNoFound;
+	
+	@ViewInject(R.id.rb_others_input)
+	private RadioButton rbOthers;
+	
+	@ViewInject(R.id.et_other_input)
+	private EditText etOthers;
+	
+	@ViewInject(R.id.rb_groupOperation_input)
+	private RadioGroup rbOperationGroup;
+	
+	@ViewInject(R.id.rb_mount_input)
+	private RadioButton rbMount;
+	
+	@ViewInject(R.id.rb_register_input)
+	private RadioButton rbRegister;
+	
+	@ViewInject(R.id.rb_unmount_input)
+	private RadioButton rbUnMount;
+	
+	@ViewInject(R.id.rb_release_input)
+	private RadioButton rbRelease;
+	
+	@ViewInject(R.id.tv_input_next)
+	private TextView tvNext;
+	
+	@ViewInject(R.id.tv_input_finish)
+	private TextView tvFinish;
+	
+    private Handler mHandler = new MainHandler();
+    static WmsInputActivity wi;
+    private MediaPlayer mediaPlayer = null;
+    private HadwareControll controll = new HadwareControll(this);
+    private boolean btn_scan = false;
+    private boolean et_scan = true;
+	private  boolean skuno = false;
+	
+	private String mProblem;
+	private String mOperation;
+	private Date date;
+	private String mBatchNum;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    	// TODO Auto-generated method stub
+    	super.onCreate(savedInstanceState);
+    	controll.Open();
+    	controll.m_handler = mHandler;
+    	IntentFilter m_keyfilter = new IntentFilter();
+    	m_keyfilter.addAction(KEY_RECEIVEER_ACTION);
+    	this.registerReceiver(_keyReceiver,m_keyfilter);
+    	rbGroup.setOnCheckedChangeListener(listener);
+    	rbOperationGroup.setOnCheckedChangeListener(mListener);
+    	Intent intent  = getIntent();
+    	mBatchNum = "rb12334";//intent.getStringExtra("batchNum");
+    }
+	
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		setTitleMessage("inbound");
+		etQuantity.setText("1");
+		
+	}
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+		View view =getLayoutInflater().inflate(R.layout.wms_input, null);
+		mLinearLayout.addView(view);
+        //llInput.addView(viewSku);
+		ViewUtils.inject(this);
+		/*viewSku = getLayoutInflater().inflate(R.layout.item_skuno_list,null);
+        llInput.addView(viewSku);
+        etSkuNo = (EditText) findViewById(R.id.et_input_sku);
+        etLink.add(0, etSkuNo);*/
+                
+	}
+	
+	private RadioGroup.OnCheckedChangeListener listener = new RadioGroup.OnCheckedChangeListener() {
+		
+		@Override
+		public void onCheckedChanged(RadioGroup group, int checkedId) {
+			// TODO Auto-generated method stub
+			switch (checkedId) {
+			case R.id.rb_broken_input:
+				
+				mProblem = "broken";
+				break;
+			
+			case R.id.rb_shelf_input:
+				
+				mProblem = "over_shelf_life";
+				break;
+				
+			case R.id.rb_nomatch_input:
+				
+				mProblem = "quantity_not_match";
+				
+			case R.id.rb_notfound_input:
+				
+				mProblem = "not_forcasted";
+				
+			case R.id.rb_others_input:
+				
+				mProblem = etOthers.getText().toString().trim();
+			default:
+				break;
+			
+			}
+		}
+	};
+	
+	private RadioGroup.OnCheckedChangeListener mListener = new RadioGroup.OnCheckedChangeListener() {
+		
+		@Override
+		public void onCheckedChanged(RadioGroup group, int checkedId) {
+			// TODO Auto-generated method stub
+			
+			switch (checkedId) {
+			case R.id.rb_mount_input:
+				mOperation = "register-and-mount";
+				break;
+			case R.id.rb_register_input:
+				mOperation = "register";
+				break;
+			case R.id.rb_unmount_input:
+				mOperation = "unmount-and-release";
+				break;
+			case R.id.rb_release_input:
+				mOperation = "release";
+				break;	
+
+			default:
+				break;
+			}
+		}
+	};
+	
+	
+	
+	@OnClick({R.id.tv_date_input,R.id.tv_input_next,R.id.tv_input_finish})
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.tv_input_next:
+			 int i = Integer.parseInt(etQuantity.getText().toString());
+			Loge("et", "et"+i);				                   
+	        break;
+
+		case R.id.tv_input_finish:
+			
+			showProgressDialog("submit...");
+			Map<String,String> map = new HashMap<>();
+			map.put("shelfNum", etShelfNum.getText().toString().trim());
+			map.put("barcode",etBarCode.getText().toString().trim());
+			map.put("quantity",etQuantity.getText().toString().trim());
+			map.put("deadlineOfShelfLife", tvDate.getText().toString());
+			map.put("problem",mProblem);
+			map.put("operation",mOperation);
+			InputRequest inputRequest = new InputRequest();
+			inputRequest.setShelfnum(etShelfNum.getText().toString().trim());
+			inputRequest.setBarcode(etBarCode.getText().toString().trim());
+			inputRequest.setQuantity(Integer.parseInt(etQuantity.getText().toString()));
+			inputRequest.setDeadlineofshelflife(date);
+			inputRequest.setProblem(mProblem);
+			inputRequest.setOperation(mOperation);
+			Map<String,String> mMap = RequestUtil.requByJson("reqJson", inputRequest);
+			Log.e("input",mMap.get("reqJson"));
+			TaskExecutor.Execute(new NetWorkPost(this, "wms//inbound-batches/"+mBatchNum+"/shelf-operations", handler).setMapOfData(mMap,SharedUtil.getToken(this)));
+			//DatabaseHelper help = DatabaseHelper.getHelper(this);
+			/*SqliteTest st = new SqliteTest("dd", "age");
+			//DatabaseHelper help = DatabaseHelper.getHelper(getBaseContext());
+			//DatabaseHelper help = OpenHelperManager.getHelper(this, DatabaseHelper.class);
+			try {
+				help.getSqliteTestDao().create(st);
+				//st = new SqliteTest("ddd", "aged");
+				//help.getSqliteTestDao().create(st);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/
+		
+			break;
+			
+			case R.id.tv_date_input:
+				 Calendar c = Calendar.getInstance();
+				 int myear = c.get(Calendar.YEAR);
+				 int month = c.get(Calendar.MONTH);
+				 int day = c.get(Calendar.DAY_OF_MONTH);
+				DatePickerDialog datePicker=new DatePickerDialog(WmsInputActivity.this, new OnDateSetListener() {
+					
+					@Override
+					public void onDateSet(DatePicker view, int year, int monthOfYear,
+							int dayOfMonth) {
+						// TODO Auto-generated method stub
+						//Toast.makeText(WmsInputActivity.this, year+"year "+(monthOfYear+1)+"month "+dayOfMonth+"day", Toast.LENGTH_SHORT).show();
+						DateFormat fmt =new SimpleDateFormat("yyyy-MM-dd");
+
+						//date = new Date(year-(monthOfYear+1)-dayOfMonth);
+						tvDate.setText(year+"-"+(monthOfYear+1)+"-"+dayOfMonth);										
+						tvDate.setTextColor(Color.argb(255, 0, 0,0));
+						tvDate.setTextSize(12);
+
+						try {
+							date = fmt.parse(tvDate.getText().toString().trim());
+						} catch (ParseException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+
+					}
+				}, myear, month,day);
+				datePicker.show();
+				break;
+		default:
+			break;
+		}
+	}	
+	
+	private Handler handler = new Handler(){
+		
+		public void handleMessage(Message msg) {
+			
+			hideProgressDialog();
+		}
+	};
+	
+	private BroadcastReceiver _keyReceiver = new BroadcastReceiver() {
+		public void onReceive(Context context, Intent intent) {
+			
+			  Log.d("012","action:"+intent.getAction());
+				String key_action = intent.getStringExtra("action");
+				String key_code = intent.getStringExtra("code");
+			}
+		
+		};
+		private class MainHandler extends Handler{
+			
+			public void handleMessage(Message msg){
+				
+				switch (msg.what) {
+				case HadwareControll.BARCODE_READ:
+					 
+					  String result  = msg.obj+"";
+					  Loge("", result);
+					  if (etShelfNum.isFocused() == true) {
+						  etShelfNum.setText(result);
+						  etBarCode.requestFocus();
+					  }
+					  if(etBarCode.isFocused() == true){
+						  etBarCode.setText(result);
+						  etQuantity.requestFocus();
+					  }
+					  				
+				    break;					
+				default:
+					break;
+				}
+			}
+
+			private EditText findViewById(int etInputSku) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		}
+		
+		private String toHexString(byte[] byteArray, int size) {
+			if (byteArray == null || byteArray.length < 1)
+				throw new IllegalArgumentException(
+						"this byteArray must not be null or empty");
+			final StringBuilder hexString = new StringBuilder(2 * size);
+			for (int i = 0; i < size; i++) {
+				if ((byteArray[i] & 0xff) < 0x10)//
+					hexString.append("0");
+				hexString.append(Integer.toHexString(0xFF & byteArray[i]));
+				if (i != (byteArray.length - 1))
+					hexString.append("");
+			}
+			return hexString.toString().toUpperCase();
+		}
+		public boolean onKeyDown(int keyCode, KeyEvent event) {
+			
+			Log.d("012","keyCode:"+keyCode);
+			if ((keyCode == KeyEvent.KEYCODE_F9 || keyCode == KeyEvent.KEYCODE_F10
+					|| keyCode == KeyEvent.KEYCODE_F11)&&event.getRepeatCount()==0) {
+				controll.scan_start();
+				return true;
+			}
+			return super.onKeyDown(keyCode, event);
+		}
+
+		public boolean onKeyUp(int keyCode, KeyEvent event) {
+			if (keyCode == KeyEvent.KEYCODE_F9 || keyCode == KeyEvent.KEYCODE_F10
+					|| keyCode == KeyEvent.KEYCODE_F11) {
+				controll.scan_stop();
+				return true;
+			}
+			return super.onKeyUp(keyCode, event);
+		}
+
+		private void playBeepSound() {
+			if (mediaPlayer != null) {
+				mediaPlayer.start();
+			}
+			
+			//Controll.playbeep();
+			
+
+		}
+
+		private void initBeepSound() {
+			if (mediaPlayer == null) {
+				mediaPlayer = new MediaPlayer();
+				AssetFileDescriptor file = getResources().openRawResourceFd(
+						R.raw.beep);
+				try {
+					if (mediaPlayer != null) {
+						mediaPlayer.setDataSource(file.getFileDescriptor(),
+								file.getStartOffset(), file.getLength());
+						file.close();
+
+						mediaPlayer.prepare();
+					}
+				} catch (IOException e) {
+					mediaPlayer = null;
+				}
+			}
+		}
+		
+		protected void onDestroy() {
+			controll.Close();
+			controll.m_handler = null;
+
+			super.onDestroy();
+		}
+
+	
+}

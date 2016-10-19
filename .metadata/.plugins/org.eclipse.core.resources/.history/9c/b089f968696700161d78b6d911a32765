@@ -1,0 +1,56 @@
+package com.wmsterminal.model;
+
+import java.util.Date;
+
+public class InputRequest {
+	
+    private String shelfnum;
+    private String barcode;
+    private int quantity;
+    private String deadlineofshelflife;
+    private String problem;
+    private String operation;
+    public void setShelfnum(String shelfnum) {
+         this.shelfnum = shelfnum;
+     }
+     public String getShelfnum() {
+         return shelfnum;
+     }
+
+    public void setBarcode(String barcode) {
+         this.barcode = barcode;
+     }
+     public String getBarcode() {
+         return barcode;
+     }
+
+    public void setQuantity(int quantity) {
+         this.quantity = quantity;
+     }
+     public int getQuantity() {
+         return quantity;
+     }
+
+    public void setDeadlineofshelflife(String deadlineofshelflife) {
+         this.deadlineofshelflife = deadlineofshelflife;
+     }
+     public String getDeadlineofshelflife() {
+         return deadlineofshelflife;
+     }
+
+    public void setProblem(String problem) {
+         this.problem = problem;
+     }
+     public String getProblem() {
+         return problem;
+     }
+
+    public void setOperation(String operation) {
+         this.operation = operation;
+     }
+     public String getOperation() {
+         return operation;
+     }
+
+
+}

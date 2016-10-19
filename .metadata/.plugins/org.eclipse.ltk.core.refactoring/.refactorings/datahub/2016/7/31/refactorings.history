@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DebugFragmentActivity.java&apos; to &apos;WmsTerminal/src/com.wmsterminal.base.activity&apos;&#x0D;&#x0A;- Original project: &apos;datahub&apos;&#x0D;&#x0A;- Destination element: &apos;WmsTerminal/src/com.wmsterminal.base.activity&apos;&#x0D;&#x0A;- Original element: &apos;com.datahub.base.activity.DebugFragmentActivity.java&apos;" description="Copy compilation unit" destination="=WmsTerminal/src&lt;com.wmsterminal.base.activity" element1="/src&lt;com.datahub.base.activity{DebugFragmentActivity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1469504410586" units="1" version="1.0"/>
+</session>

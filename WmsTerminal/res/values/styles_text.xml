@@ -1,0 +1,468 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Text_Com">
+        <item name="android:textSize">@dimen/text_com</item>
+    </style>
+
+    <style name="Text_Com_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Text_Com_Left_Gray" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing" parent="@style/Text_Com_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Com_Left_Ash" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_Com_Left_Blue" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/babyblue</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_Ash" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_Com_Left_Top_Sing" parent="@style/Text_Com_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="Text_Com_Left_Top_Sing_Blue" parent="@style/Text_Com_Left_Top_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_Bold" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_Blue" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/babyblue</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_Gray_Dark" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_White" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Com_Left_Sing_Gray" parent="@style/Text_Com_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Left_Top" parent="@style/Text_Com">
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="Text_Com_Left_Top_Ash" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_Com_Left_Top_White" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Com_Left_Top_Gray" parent="@style/Text_Com_Left_Top">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Center" parent="@style/Text_Com">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text_Com_Center_Gray" parent="@style/Text_Com_Center">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Center_Sing" parent="@style/Text_Com_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Com_Center_Sing_Gray" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Center_Sing_Blue" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_Com_Center_Sing_White" parent="@style/Text_Com_Center_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Com_Right" parent="@style/Text_Com">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="Text_Com_Right_Red" parent="@style/Text_Com_Right">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Text_Com_Right_Sing" parent="@style/Text_Com_Right">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Com_Right_Sing_Ash" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_Com_Right_Sing_Gray" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Com_Right_Sing_White" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Com_Right_Sing_Blue" parent="@style/Text_Com_Right_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <!-- lar -->
+    <style name="Text_Lar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_lar</item>
+    </style>
+
+    <style name="Text_Lar_Left" parent="@style/Text_Lar">
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Text_Lar_Left_Gray" parent="@style/Text_Lar_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!-- h1 -->
+    <style name="Text_h1_Left" parent="@style/Text_Com_Left">
+        <item name="android:textSize">@dimen/text_h1</item>
+    </style>
+
+    <style name="Text_h1_Left_White" parent="@style/Text_Com_Left">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h1_Left_Red" parent="@style/Text_h1_Left">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Text_h1_Left_Top" parent="@style/Text_h1_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="Text_h1_Left_Bottom" parent="@style/Text_h1_Left">
+        <item name="android:gravity">left|bottom</item>
+    </style>
+
+    <style name="Text_h1_Left_Bottom_Sing" parent="Text_h1_Left_Bottom">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h1_Left_Sing" parent="@style/Text_h1_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h1_Left_Sing_White" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h1_Left_Sing_Ash" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_h1_Left_Sing_Blue" parent="@style/Text_h1_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_h1_Center" parent="@style/Text_h1_Left">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text_h1_Center_Gray" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/ash</item>
+    </style>
+
+    <style name="Text_h1_Center_Dodgerblue" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/dodgerblue</item>
+    </style>
+
+    <style name="Text_h1_Center_Sing" parent="@style/Text_h1_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h1_Center_Sing_Blue" parent="@style/Text_h1_Center">
+        <item name="android:textColor">@color/deepskyblue</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h1_Center_Sing_White" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h1_Center_Sing_Gray" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_h1_Center_Sing_BlueSea" parent="@style/Text_h1_Center_Sing_Blue">
+        <item name="android:textColor">@color/lightseagreen</item>
+    </style>
+
+    <style name="Text_h1_Right" parent="@style/Text_h1_Left">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text_h1_Right_Sing" parent="@style/Text_h1_Right">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h2_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+    </style>
+
+    <style name="Text_h2_Left_White" parent="@style/Text_h2_Left">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h2_Left_Sing" parent="@style/Text_h2_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h2_Left_Sing_White" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h2_Center" parent="@style/Text_h2_Left">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text_h2_Center_Sing" parent="@style/Text_h2_Center">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_h2_Center_Sing_White" parent="@style/Text_h2_Center_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_h2_Left_Sing_Blue" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_h2_Left_Sing_gray" parent="@style/Text_h2_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_h4" parent="@style/Text_Com">
+        <item name="android:textSize">@dimen/text_h4</item>
+    </style>
+
+    <style name="Text_h4_Center" parent="@style/Text_h4">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text_h4_Left_Sing" parent="Text_h4">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Text_h4_Left_Bottom_Sing" parent="Text_h4_Left_Sing">
+        <item name="android:gravity">left|bottom</item>
+    </style>
+
+    <style name="Text_Small_Left" parent="@style/Text_Com">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text_Small_Left_Top" parent="@style/Text_Small_Left">
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="Text_Small_Left_Gray" parent="@style/Text_Small_Left">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Small_Left_Top_Gray" parent="@style/Text_Small_Left_Gray">
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="Text_Small_Left_Sing" parent="@style/Text_Small_Left">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Small_Left_Sing_White" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Small_Left_Sing_Blue" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="Text_Small_Left_Sing_DeepskyBlue" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_Small_Left_Sing_Gray" parent="@style/Text_Small_Left_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Small_Center_Sing" parent="@style/Text_Small_Left">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Small_Center_Sing_Blue" parent="@style/Text_Small_Center_Sing">
+        <item name="android:textColor">@color/deepskyblue</item>
+    </style>
+
+    <style name="Text_Small_Center_Sing_Gray" parent="@style/Text_Small_Center_Sing">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Small_Right" parent="@style/Text_Com">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="Text_Login_Title">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Home_Text">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text_Login_Operation">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Main_Notice">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Repair_Title">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Repair_Adapt">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Left_Small_Sing_Gray">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Right_Small_Sing_Gray">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Left_Small_Sing">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Left_TitleSecd_Sing">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="detailinfo_textstyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Text_Message_One">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text_Neighbour_Left_Sing_DarkBlue">
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Message_Left_Sing_Green">
+        <item name="android:textSize">@dimen/text_com</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Small_Right_Sing">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Small_Right_Sing_Gray">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_Small_Right_Sing_White">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Text_PayTip">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <!-- 黑色字 -->
+    <style name="black_text">
+        <item name="android:textColor">@color/title_txt_color</item>
+    </style>
+
+    <!-- 标题文字样式-黑 -->
+    <style name="Text__h1_black_center" parent="@style/black_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 标题文字样式-白 -->
+    <style name="Text__h1_white_center" parent="@style/white_text">
+        <item name="android:textSize">@dimen/title_text_h1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

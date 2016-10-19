@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sky.png",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\drawable-xhdpi-v4\\sky.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\buildings.png",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\drawable-xhdpi-v4\\buildings.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ptr_rotate_arrow.png",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sun.png",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\drawable-xhdpi-v4\\sun.png"
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\iv_delete_bg.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\iv_delete_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_search_bg.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\btn_search_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer.zhy_pulltorefreash_chenyoca\\base_library_pullToRefresh_chenyoca\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_left_btn_check.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_left_btn_check.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\footer_wms.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\footer_wms.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_btn_next.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_btn_next.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_red_disable.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_red_disable.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_blue_enable.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_blue_enable.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_left_btn.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_left_btn.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_common_category_list_s.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\drawable_common_category_list_s.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_login_reg_selector.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_login_reg_selector.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_single_btn_normal.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_single_btn_normal.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_stage_unselect.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_stage_unselect.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_single_btn.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_single_btn.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\category_list_items.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\category_list_items.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\photo_choose_bg.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\photo_choose_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_single_btn_check.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_single_btn_check.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_common_category_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\drawable_common_category_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_right_btn_normal.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_right_btn_normal.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_left_btn_normal.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_left_btn_normal.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_right_btn_check.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_right_btn_check.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_drawable.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\checkbox_drawable.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_right_btn.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_right_btn.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_stage_select.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_stage_select.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_voice_play.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_voice_play.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\background_tab.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_footer_text_color.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\selector_footer_text_color.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer.zhy_pulltorefreash_chenyoca\\base_library_pullToRefresh_chenyoca\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_ios.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\dialog_ios.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\linearlayout.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\linearlayout.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_red_enable.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_red_enable.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\evaluate_ratingbar_small.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\evaluate_ratingbar_small.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\search_edittext_shape.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\search_edittext_shape.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\cb_btn_1.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\cb_btn_1.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_gray_disable.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\bg_gray_disable.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\debug\\drawable\\lv_search_tips_bg.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\drawable\\lv_search_tips_bg.xml"
+    }
+]

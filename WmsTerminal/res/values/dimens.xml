@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 更小文字 -->
+    <dimen name="text_little">8sp</dimen>
+    <!-- 小文字 -->
+    <dimen name="text_small">12sp</dimen>
+    <!-- 正常显示 -->
+    <dimen name="text_com">15sp</dimen>
+    <!-- 大字号 -->
+    <dimen name="text_lar">16sp</dimen>
+    <!-- h1号 -->
+    <dimen name="text_h1">18sp</dimen>
+    <!-- h2号 -->
+    <dimen name="text_h2">22sp</dimen>
+    <!-- h3号 -->
+    <dimen name="text_h3">26sp</dimen>
+    <!-- h4号 -->
+    <dimen name="text_h4">30sp</dimen>
+    <!-- h5号 -->
+    <dimen name="text_h5">34sp</dimen>
+    <!-- 标题栏高度 -->
+    <dimen name="title_height">40dip</dimen>
+    <!-- 底部高度 -->
+    <dimen name="footer_height">50dip</dimen>
+    <!-- TAB高度 -->
+    <dimen name="tab_height_find">57dip</dimen>
+    <!-- 二级标题栏高度 -->
+    <dimen name="sec_title_height">40dip</dimen>
+    <!-- 背景块间距 -->
+    <dimen name="bg_spacing_height">15dip</dimen>
+    <!-- 控件与屏幕边距 -->
+    <dimen name="screen_control_spacing">15dip</dimen>
+     <!-- 控件与屏幕上边距 -->
+    <dimen name="screen_control_spacing_top">40dip</dimen>
+    <!-- 二级标题上下间距 -->
+    <dimen name="title_h2_spacing">13dip</dimen>
+    <!-- 模块间距一 -->
+    <dimen name="module_spacing_one">23dip</dimen>
+    <!-- 较小间距  -->
+    <dimen name="spacing_small">10dip</dimen>
+    <!-- TextView文本上下边距 -->
+    <dimen name="textview_padding_spcing">9dip</dimen>
+    <!-- 选项卡的 高度 -->
+    <dimen name="tab_height">40dip</dimen>
+    <!-- 选项卡内线的高度 -->
+    <dimen name="vertical_line_height">30dip</dimen>
+    <!-- 动画线的高度 -->
+    <dimen name="tab_line_anim_height">2dip</dimen>
+    <!-- 文字与图标距离 -->
+    <dimen name="split_bg_spacing">11dip</dimen>
+    <dimen name="icon_text_large_spacing">13dip</dimen>
+    <!-- 文字与文字间较大 距离   -->
+    <dimen name="text_text_large_spacing">21dip</dimen>
+    <!-- 较小圆角弧度 -->
+    <dimen name="ui_radius">2dip</dimen>
+    <!-- 文字与图标较小距离 -->
+    <dimen name="icon_text_spacing_small">5dip</dimen>
+    <!-- 导航小圆点 -->
+    <dimen name="radiu_spacing">3dip</dimen>
+    <dimen name="radiu_bottom">8dip</dimen>
+    <dimen name="radiu_height">9dip</dimen>
+    <!-- 头部图标与屏幕间距 -->
+    <dimen name="icon_screen_spancing">15dip</dimen>
+    <!-- 项目图标定边长 -->
+    <dimen name="icon_project_side_length">80dip</dimen>
+    <!-- 登录窗口 -->
+    <!-- Edittext高度 -->
+    <dimen name="edittext_height_normal">51dip</dimen>
+    <dimen name="height_large_spancing">60dip</dimen>
+    <dimen name="sec_list_left_spancing">65dip</dimen>
+    <dimen name="height_more_large_spancing">88dip</dimen>
+    <dimen name="height_max_large_spancing">88dip</dimen>
+    <!-- EditText之间的 间距 -->
+    <dimen name="height_edittext_nommal">20dip</dimen>
+    <!-- EditText左右边距 -->
+    <dimen name="padding_edittext_spancing">14.5dip</dimen>
+    <!-- 输入文字与图标距离 -->
+    <dimen name="text_img_spancing">13dip</dimen>
+    <!-- 登陆界面两个边线的 长度 -->
+    <dimen name="width_line_login">74dip</dimen>
+    <!-- 登录Button的宽度 -->
+    <dimen name="width_button_login">284dip</dimen>
+    <!-- 验证码Button宽度 -->
+    <dimen name="width_button_authcode">90dip</dimen>
+    <dimen name="height_button_authcode">30dip</dimen>
+    <!-- 图片边长  -->
+    <dimen name="image_side_lenght_normal">72dip</dimen>
+    <!-- 项目列表页图片高度 -->
+    <dimen name="image_height_large">178dip</dimen>
+    <!-- 左下角图标高度  -->
+    <dimen name="block_height_normal">34dip</dimen>
+    <dimen name="icon_width_normal">90dip</dimen>
+    <!-- item高度 -->
+    <dimen name="item_height_list_nomal">106dip</dimen>
+    <!-- item上下间距 -->
+    <dimen name="item_spancing_nomal">17dip</dimen>
+    <!-- 一个间距 -->
+    <dimen name="height_spancing">18dip</dimen>
+    <!-- 1dp -->
+    <dimen name="one_dip">1dip</dimen>
+    <!-- ******************文字************************ -->
+    <!-- 大号字 -->
+    <dimen name="title_text_morelarge_h1">19sp</dimen>
+    <!-- 标题一  -->
+    <dimen name="title_text_h1">18sp</dimen>
+    <!-- 标题二 -->
+    <dimen name="title_text_h2">16.5sp</dimen>
+    <!-- 正文一  -->
+    <dimen name="main_text_h3">15sp</dimen>
+    <dimen name="main_text_h5">14sp</dimen>
+    <!-- 正文二 -->
+    <dimen name="main_text_h4">13sp</dimen>
+    <!-- 正文三 -->
+    <dimen name="main_text_h6">12sp</dimen>
+    <!-- 正文4 -->
+    <dimen name="main_text_h7">11sp</dimen>
+    <!-- 小字 -->
+    <dimen name="main_text_h8">10sp</dimen>
+    <!-- 更小 -->
+    <dimen name="main_text_h9">20sp</dimen>
+
+    <!-- xxxxxxxx边距xxxxxxxx -->
+    <!-- 单选框和文字间距 -->
+    <dimen name="padding_radio_text_left">32dip</dimen>
+    <!-- 最小边距 -->
+    <dimen name="margin_small">2dip</dimen>
+    <!-- 控件边距 -->
+    <dimen name="margin_control">4dip</dimen>
+    <!-- 输入框上下边距 -->
+    <dimen name="margin_edit">8dip</dimen>
+    <!-- 控件与屏幕边距 -->
+    <dimen name="margin_screen">12dip</dimen>
+    <!-- 控件与屏幕标准间距 -->
+    <dimen name="margin_screen_nomarl">14dip</dimen>
+    <!-- 控件与屏幕较大边距 -->
+    <dimen name="margin_big">16dip</dimen>
+    <!-- xxxxxxxx高度xxxxxxxx -->
+    <!-- Line高度 -->
+    <dimen name="line_1">1dip</dimen>
+    <dimen name="line_2">2dip</dimen>
+    <dimen name="line_3">3dip</dimen>
+    <!-- 较小高度 -->
+    <dimen name="height_small">24dip</dimen>
+    <!-- 基本高度 -->
+    <dimen name="height_common">40dip</dimen>
+    <!-- Google标准高度 -->
+    <dimen name="height_google">48dip</dimen>
+    <!-- 手指触碰标准高度 -->
+    <dimen name="height_touch">32dip</dimen>
+    <!-- 菜单项的高度 -->
+    <dimen name="height_menu_item">60dip</dimen>
+    <!-- 图片高度 -->
+    <dimen name="height_image_com">100dip</dimen>
+    <!-- 图片高度 -->
+    <dimen name="height_image_big">120dip</dimen>
+    <!-- 新闻公告图片的高度 -->
+    <dimen name="height_image">74dip</dimen>
+    <!-- 页面小图标高度 -->
+    <dimen name="height_icon">20dip</dimen>
+    <!-- xxxxxxxx宽度xxxxxxxx -->
+    <!-- 标题宽度 -->
+    <dimen name="width_title">100dip</dimen>
+    <!-- xxxxxxxx圆环xxxxxxxx -->
+    <dimen name="pie_chart_width">6dip</dimen>
+    <!-- 登出按钮高度 -->
+    <dimen name="height_logout">55dip</dimen>
+
+    <!-- ************************************************************************************ -->
+    <!-- 首页广告高度 -->
+    <dimen name="index_ad_height">72dip</dimen>
+    <!-- 分类页广告高度 -->
+    <dimen name="gategory_ad_height">96dip</dimen>
+    <!-- 首页横向列表高度 -->
+    <dimen name="index_hor_height">142dip</dimen>
+      <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+</resources>

@@ -1,0 +1,121 @@
+package com.wmsterminal.activity;
+
+
+import android.app.Fragment;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.view.Window;
+
+import com.wmsterminal.R;
+import com.wmsterminal.base.activity.BaseFooterActivity;
+import com.wmsterminal.common.fragment.HeaderFragment;
+import com.wmsterminal.fragment.ScanPrintFragment;
+import com.wmsterminal.fragment.StockTakingFragment;
+import com.wmsterminal.fragment.WmsFragment;
+
+
+
+public class MainActivity extends BaseFooterActivity  {
+
+	/**
+	 * wmsÀÈ∆¨
+	 */
+	private WmsFragment mWmsFramgent;
+	
+	/**
+	 *  scan&printÀÈ∆¨
+	 */
+	private ScanPrintFragment mScanPrintFrament;
+	
+	/**
+	 *  stockTakingÀÈ∆¨
+	 */
+	private StockTakingFragment mStockTakingFragment;
+	
+	protected HeaderFragment mHeaderFragment;
+
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		mHeaderFragment = (HeaderFragment)getSupportFragmentManager().findFragmentById(R.id.base_header);
+
+	}
+	
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+	}
+	
+	@Override
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		mFooterFragment.setFooterInterface(this);
+		mFooterFragment.setChecked(0);
+		}
+	/**
+	 * –ﬁ∏¥∞¥∑µªÿº¸∫Û≥Ã–ÚÕÀ≥ˆŒ Ã‚
+	 * 
+	 */
+	
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		moveTaskToBack(true);
+		super.onBackPressed();
+	}
+	@Override
+	public void onCheckedChanged(int position, boolean isChecked) {
+		// TODO Auto-generated method stub
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		
+		switch (position) {
+		
+		case 1:
+			//mHeaderLinearLayout.setVisibility(View.GONE);
+			if (null == mScanPrintFrament) {
+				mScanPrintFrament = new ScanPrintFragment();
+			}
+			Loge("test","scan");
+			ft.replace(R.id.layout_of_view, mScanPrintFrament);
+			break;
+			
+		case 2:
+			//mHeaderLinearLayout.setVisibility(View.GONE);
+			if (null == mStockTakingFragment) {
+				mStockTakingFragment = new StockTakingFragment();
+			}
+			Loge("test", "stock");
+			ft.replace(R.id.layout_of_view, mStockTakingFragment);
+			break;
+			
+		default:
+			//mHeaderLinearLayout.setVisibility(View.GONE);
+			if(null == mWmsFramgent){
+				mWmsFramgent = new WmsFragment();
+			}
+            Loge("text", "wms");
+			ft.replace(R.id.layout_of_view, mWmsFramgent);
+			break;
+		}
+		ft.commitAllowingStateLoss();
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+
+
+	
+	private void onDestory(){
+		super.onDestroy();
+	}
+}

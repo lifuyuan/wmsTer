@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fresco-v0.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/fresco_sdk/libs/fresco-v0.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

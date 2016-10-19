@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:fillViewport="true">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_input1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="53dp"
+        >
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="ShelfNum. :"
+        android:textColor="@color/blank_light"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+         />
+    
+    <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_shelfnum_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        />
+    </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+     
+     <RelativeLayout
+        android:id="@+id/rl_sku"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#DCDCDC"
+        >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="BarCode . :"
+        android:textColor="@color/blank_light" 
+        android:background="#DCDCDC"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+        />
+    
+    <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_barcode_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+       />
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        >
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Quantity. :"
+        android:textColor="@color/blank_light"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+         />
+    
+    <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_quantity_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        android:inputType="number"
+        />
+    </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+     
+       <RelativeLayout
+        android:id="@+id/rl_sku1"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#DCDCDC"
+        >
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Date . :"
+        android:textColor="@color/blank_light" 
+        android:background="#DCDCDC"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+        />
+    
+     <TextView
+     	android:id="@+id/tv_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView4"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/blank_light"
+        android:textSize="12dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        android:background="@null"
+        android:text="please set"
+        android:drawableRight="@drawable/ic_back"
+        />
+     	
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+       />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/screen_control_spacing"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+       />
+ 
+       <RelativeLayout
+        android:id="@+id/rl_sku22"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="#DCDCDC"
+        >
+        <TextView 
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Failure Report"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            />
+       </RelativeLayout>
+           
+      <RadioGroup
+            android:id="@+id/rb_group_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+             
+            <RadioButton
+              android:id="@+id/rb_broken_input"
+              android:layout_width="match_parent"
+              android:layout_height="39dp"
+              android:layout_gravity="center_vertical"
+              android:text="Broken"              
+              android:layout_marginLeft="@dimen/screen_control_spacing"            
+               />             
+            <View
+        		android:layout_width="match_parent"
+        		android:layout_height="1px"
+        		android:background="@color/gray_light" 
+       			/>
+              <RadioButton
+                android:id="@+id/rb_shelf_input"
+                android:layout_width="wrap_content"
+                android:text="Over Shelf Life"
+                android:layout_marginLeft="@dimen/screen_control_spacing"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                />
+              <View
+        		android:layout_width="match_parent"
+        		android:layout_height="1px"
+        		android:background="@color/gray_light" 
+       			/>
+            <RadioButton
+                android:id="@+id/rb_nomatch_input"
+                android:layout_width="wrap_content"
+                android:text="Quantity not match"
+                android:layout_marginLeft="@dimen/screen_control_spacing"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                /> 
+              <View
+        		android:layout_width="match_parent"
+        		android:layout_height="1px"
+        		android:background="@color/gray_light" 
+       			/>   
+            <RadioButton
+                android:id="@+id/rb_notfound_input"
+                android:layout_width="wrap_content"
+                android:text="Not Found In Inbound Forecast"
+                android:layout_marginLeft="@dimen/screen_control_spacing"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                />  
+              <View
+        		android:layout_width="match_parent"
+        		android:layout_height="1px"
+        		android:background="@color/gray_light" 
+       			/>   
+             <RadioButton
+                android:id="@+id/rb_others_input"
+                android:layout_width="wrap_content"
+                android:text="Others"
+                android:layout_marginLeft="@dimen/screen_control_spacing"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                /> 
+                 <View
+        		android:layout_width="match_parent"
+        		android:layout_height="1px"
+        		android:background="@color/gray_light" 
+       			/> 
+          
+        </RadioGroup>
+   
+      <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_other_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rb_others_input"
+        android:background="@null"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        />   
+      />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />   
+         
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+            >
+        <TextView 
+        android:id="@+id/tv_input_next"
+        android:layout_width="65dip"
+        android:layout_height="35dip"
+        android:text="next"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        android:layout_marginTop="@dimen/screen_control_spacing"
+		android:layout_alignParentRight="true"
+	    android:background="@color/scan_tab_pressed"
+        />
+        </RelativeLayout>
+             
+                
+        <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+            >
+        <TextView 
+        android:id="@+id/tv_input_finish"
+        android:layout_width="65dip"
+        android:layout_height="35dip"
+        android:text="finish"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+        android:layout_marginTop="@dimen/screen_control_spacing"
+	    android:background="@color/scan_tab_pressed"
+        />
+             
+         </RelativeLayout>
+        
+    </LinearLayout>
+                  
+</LinearLayout>
+   </ScrollView>

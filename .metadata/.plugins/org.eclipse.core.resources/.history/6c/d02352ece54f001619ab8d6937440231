@@ -1,0 +1,14 @@
+package test;
+
+public class Main {
+	
+	public static void main(String args[]){
+		
+		System.out.println("ÉùÃ÷Person = null");
+		Person per1  = null;
+		System.out.println("ÊµÀı»¯per1 = new Person()");
+		per1 = new Person("name","22");
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ClearableEditText.java&apos; to &apos;WmsTerminal/src/com.wmsterminal.common.view&apos;&#x0D;&#x0A;- Original project: &apos;LoginActivity&apos;&#x0D;&#x0A;- Destination element: &apos;WmsTerminal/src/com.wmsterminal.common.view&apos;&#x0D;&#x0A;- Original element: &apos;ClearableEditText.java&apos;" description="Copy file" destination="=WmsTerminal/src&lt;com.wmsterminal.common.view" element1="java/com/example/barryirvine/clearableedittext/views/ClearableEditText.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1470646113752" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package test;
+
+public class Main {
+	
+	public static void main(String args[]){
+		
+		Person per1 = new Person();
+		Person per2 = null;
+		per2 = per1;
+		per1.age = "1";
+		per1.name = "fd";
+		per2.age= "33";
+		per1.tell();	
+		per2.tell();
+	}
+
+}

@@ -1,0 +1,26 @@
+package test;
+
+public class Person {
+	
+	private String name;
+	private String age;
+	
+	public Person(){
+	   System.out.println("构造方法");	
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public void tell(){
+		System.out.print("姓名"+name+"年龄"+age);
+	}
+}

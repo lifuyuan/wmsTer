@@ -1,0 +1,373 @@
+package com.wmsterminal.activity.scan;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import android.R.color;
+import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.res.AssetFileDescriptor;
+import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+import com.wmsterminal.R;
+import com.wmsterminal.base.activity.BaseActivity;
+import com.wmsterminal.common.thread.NetWorkPost;
+import com.wmsterminal.common.thread.TaskExecutor;
+import com.wmsterminal.func.HadwareControll;
+import com.wmsterminal.model.RequestPallet;
+import com.wmsterminal.model.ReturnParcel;
+import com.wmsterminal.util.IntentUtil;
+import com.wmsterminal.util.RequestUtil;
+import com.wmsterminal.util.SharedUtil;
+
+public class PalletActivity extends BaseActivity implements View.OnClickListener{
+
+	@ViewInject(R.id.et_palletno_scan)
+	private EditText etPallet;
+	
+	@ViewInject(R.id.et_parcelnum_scan)
+	private EditText etParcel;
+	
+	@ViewInject(R.id.tv_ptsubmit_scan)
+	private TextView tvSubmit;
+	
+	@ViewInject(R.id.tv_ptdelete_scan)
+	private TextView tvDelete;
+	
+	@ViewInject(R.id.ll_pallet)
+	private LinearLayout llPallet;
+	
+	private LinkedList<EditText> etLink;
+	
+	public static final String KEY_RECEIVEER_ACTION = "com.idatachina.SCANKEYEVENT";
+
+	public Handler mHandler = new MainHandler();
+	//public ReadDoSomeThing readDoSomeThing;
+	static ScanReturnParcelActivity ss;
+	protected MediaPlayer mediaPlayer = null;
+	HadwareControll controll = new HadwareControll(this);
+	public boolean btn_scan =false;
+	public  boolean et_scan = true;
+	
+	private int index = 1;
+	private int etIndex = 0;
+	    
+    private int tvIDIndex = 1000;
+    
+    RequestPallet rePallet = null;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		controll.Open();
+		controll.m_handler = mHandler;
+	    IntentFilter m_keyfilter = new IntentFilter();
+		m_keyfilter.addAction(KEY_RECEIVEER_ACTION);
+		this.registerReceiver(_keyReceiver,m_keyfilter);
+	}
+	
+	@Override
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		etLink = new LinkedList<EditText>();
+		etLink.add(etParcel);
+	}
+	
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+		View view = getLayoutInflater().inflate(R.layout.scan_pallet, null);
+		mLinearLayout.addView(view);
+		ViewUtils.inject(this);
+	}
+	
+	@OnClick({R.id.tv_ptsubmit_scan,R.id.tv_ptdelete_scan})
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.tv_ptsubmit_scan:
+			loadView("add");
+			break;			
+		case  R.id.tv_ptdelete_scan:
+			loadView("delete");
+			break;
+		default:
+			break;
+		}
+	}
+	
+	public void loadView(String method){		
+		showProgressDialog("submit....");
+		rePallet =  new RequestPallet();
+		RequestPallet.containedParcels containList = new RequestPallet.containedParcels();
+		rePallet.setPalletnum(etPallet.getText().toString().trim());
+		List<RequestPallet.containedParcels> list = new ArrayList<>();
+		for (int i = 0; i < etLink.size(); i++) {
+			if (i == 0) {
+				containList.setMethod(method);
+				containList.setParcelnum(etParcel.getText().toString().trim());
+				list.add(containList);
+				rePallet.setContainedParcels(list);
+			}else{
+				containList.setMethod(method);
+				containList.setParcelnum(etLink.get(i).getText().toString().trim());
+				list.add(containList);
+				rePallet.setContainedParcels(list);
+			}
+		}
+		
+		Map<String,String> map = RequestUtil.requByJson("reqJson",rePallet);
+		Log.e("pallet",map.get("reqJson"));
+		TaskExecutor.Execute(new NetWorkPost(this, "wms/pallets/", handler).setMapOfData(map, SharedUtil.getToken(this)));
+	}
+	
+	private Handler handler = new Handler(){
+		
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			hideProgressDialog();
+			String json  = msg.obj.toString();
+			ReturnParcel returnParcel = null;
+			try {
+				returnParcel = JSON.parseObject(json, ReturnParcel.class);
+				} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			if (returnParcel.getStatus().equals("success")) {
+				
+			}else {
+				
+			}
+		};
+	};
+	
+	public void showDialog(String reason){			
+		
+		//初始化一个AlertDialog对象
+		AlertDialog alertDialog = new AlertDialog.Builder(PalletActivity.this).create();
+		
+		//为dialog设置图标
+		//alertDialog.setIcon(getResources().getDrawable(R.drawable.advise));
+		
+		//为dialog设置标题
+		alertDialog.setTitle("success");
+		if () {
+			
+		}
+		//为dialog设置主体内容
+		alertDialog.setMessage(reason+" success");
+		
+		//为dialog设置一个按钮
+		alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "continue", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				IntentUtil.startActivity(PalletActivity.this,PalletActivity.class);
+			}
+		});
+		
+		//为dialog设置另一个按钮
+		alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "exit", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				PalletActivity.this.finish();
+			}
+		});
+		
+		//显示dialog
+		alertDialog.show();
+	
+
+}
+	
+	private BroadcastReceiver _keyReceiver = new BroadcastReceiver() {
+		public void onReceive(Context context, Intent intent) {
+			
+			  Log.d("012","action:"+intent.getAction());
+				String key_action = intent.getStringExtra("action");
+				String key_code = intent.getStringExtra("code");
+			}
+		
+		};
+	
+	private class MainHandler extends Handler{
+		
+		public void handleMessage(Message msg){
+			
+			switch (msg.what) {
+			case HadwareControll.BARCODE_READ:
+				 
+				  String result  = msg.obj+"";
+				 
+						
+				break;						
+
+			default:
+				break;
+			
+		}
+		}
+	}
+	
+	private void addContent(){
+		
+		LinearLayout layout = new LinearLayout(getApplicationContext());
+		LinearLayout.LayoutParams lLayoutParams = new LinearLayout.LayoutParams(ViewGroup
+				.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+		lLayoutParams.topMargin = 5;
+		layout.setLayoutParams(lLayoutParams);
+		layout.setBackgroundColor(color.background_light);
+		layout.setOrientation(LinearLayout.VERTICAL);
+		
+		RelativeLayout rlBnt = new RelativeLayout(PalletActivity.this);
+		RelativeLayout.LayoutParams rlParam = new RelativeLayout.LayoutParams
+				(ViewGroup.LayoutParams.MATCH_PARENT, 39);	
+		rlBnt.setPadding(15, 0, 0, 0);
+		rlBnt.setLayoutParams(rlParam);
+		
+		TextView tv = new TextView(PalletActivity.this);
+		RelativeLayout.LayoutParams tvParam = new RelativeLayout.LayoutParams
+				(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+		tvParam.addRule(RelativeLayout.CENTER_VERTICAL);
+		tv.setLayoutParams(tvParam);
+		tv.setText("parcelNum. :");
+		tv.setTextColor(Color.argb(255,102, 102,102));
+		tv.setId(tvIDIndex);
+		rlBnt.addView(tv);
+		
+		EditText etContent = new EditText(PalletActivity.this);
+		RelativeLayout.LayoutParams etParam = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+			ViewGroup.LayoutParams.WRAP_CONTENT);
+		etParam.setMargins(-7, 0, 0, 0);
+		etParam.addRule(RelativeLayout.CENTER_VERTICAL);
+		etParam.addRule(RelativeLayout.RIGHT_OF,tvIDIndex);
+		etContent.setHint("input box");
+		//etContent.setTextColor(color.black);
+		etContent.setHintTextColor(Color.argb(255,178,178,178));
+		etContent.setSingleLine(true);
+		etContent.setTextSize(12);
+		etContent.setBackground(null);
+		etContent.requestFocus();
+		etLink.add(index, etContent);
+		Loge("","index"+index);
+		View  vw = new View(PalletActivity.this);
+		LinearLayout.LayoutParams vwParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 
+				1);
+		vwParams.setMargins(15, 0,0,0);
+		vw.setLayoutParams(vwParams);
+		vw.setBackgroundColor(Color.argb(255, 178,178, 178));
+		
+		rlBnt.addView(etContent, etParam);
+		layout.addView(rlBnt);
+		layout.addView(vw);
+		llPallet.addView(layout);
+		tvIDIndex++;
+		index++;
+	}
+	
+	private String toHexString(byte[] byteArray, int size) {
+		if (byteArray == null || byteArray.length < 1)
+			throw new IllegalArgumentException(
+					"this byteArray must not be null or empty");
+		final StringBuilder hexString = new StringBuilder(2 * size);
+		for (int i = 0; i < size; i++) {
+			if ((byteArray[i] & 0xff) < 0x10)//
+				hexString.append("0");
+			hexString.append(Integer.toHexString(0xFF & byteArray[i]));
+			if (i != (byteArray.length - 1))
+				hexString.append("");
+		}
+		return hexString.toString().toUpperCase();
+	}
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		
+		Log.d("012","keyCode:"+keyCode);
+		if ((keyCode == KeyEvent.KEYCODE_F9 || keyCode == KeyEvent.KEYCODE_F10
+				|| keyCode == KeyEvent.KEYCODE_F11)&&event.getRepeatCount()==0) {
+			controll.scan_start();
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_F9 || keyCode == KeyEvent.KEYCODE_F10
+				|| keyCode == KeyEvent.KEYCODE_F11) {
+			controll.scan_stop();
+			return true;
+		}
+		return super.onKeyUp(keyCode, event);
+	}
+
+	private void playBeepSound() {
+		if (mediaPlayer != null) {
+			mediaPlayer.start();
+		}
+		
+		//Controll.playbeep();
+		
+
+	}
+
+	private void initBeepSound() {
+		if (mediaPlayer == null) {
+			mediaPlayer = new MediaPlayer();
+			AssetFileDescriptor file = getResources().openRawResourceFd(
+					R.raw.beep);
+			try {
+				if (mediaPlayer != null) {
+					mediaPlayer.setDataSource(file.getFileDescriptor(),
+							file.getStartOffset(), file.getLength());
+					file.close();
+
+					mediaPlayer.prepare();
+				}
+			} catch (IOException e) {
+				mediaPlayer = null;
+			}
+		}
+	}
+
+	protected void onDestroy() {
+		controll.Close();
+		controll.m_handler = null;
+
+		super.onDestroy();
+	}
+
+
+	
+
+}

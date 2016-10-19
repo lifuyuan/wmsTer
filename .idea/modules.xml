@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WmsTer.iml" filepath="$PROJECT_DIR$/WmsTer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/WmsTer-zhy_pulltorefreash_chenyoca.iml" filepath="$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/WmsTer-zhy_pulltorefreash_chenyoca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WmsTerminal/WmsTerminal.iml" filepath="$PROJECT_DIR$/WmsTerminal/WmsTerminal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" filepath="$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fresco_sdk/fresco_sdk.iml" filepath="$PROJECT_DIR$/fresco_sdk/fresco_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr_sdk/ptr_sdk.iml" filepath="$PROJECT_DIR$/ptr_sdk/ptr_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/zhy_pulltorefreash_chenyoca/zhy_pulltorefreash_chenyoca-zhy_pulltorefreash_chenyoca.iml" filepath="$PROJECT_DIR$/zhy_pulltorefreash_chenyoca/zhy_pulltorefreash_chenyoca/zhy_pulltorefreash_chenyoca-zhy_pulltorefreash_chenyoca.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,111 @@
+package com.wmsterminal.activity.wms;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.content.Intent;
+import android.os.Handler;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.google.gson.JsonArray;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.wmsterminal.R;
+import com.wmsterminal.activity.LoginActivity;
+import com.wmsterminal.base.activity.BaseActivity;
+import com.wmsterminal.common.thread.NetWorkPost;
+import com.wmsterminal.common.thread.TaskExecutor;
+import com.wmsterminal.model.IndexInputReponse;
+import com.wmsterminal.util.IntentUtil;
+import com.wmsterminal.util.SharedUtil;
+
+public class IndexInputActivity extends BaseActivity implements  View.OnClickListener {
+	
+	@ViewInject(R.id.lv_scanprint)
+	private ListView mListView;
+	
+	String [] arg = new String[]{"1","2","3"};
+	private Object tv_wms_list;
+	
+	private List<Map<String,String>> listBatchNum = new ArrayList<>();
+	
+	IndexInputReponse inputReponse = null;
+
+	@Override
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		for (int i = 0; i < inputReponse.getInboundbatchnums().size(); i++) {
+			Map<String,String> map = new HashMap<>();
+			map.put("inboundbatchnum", inputReponse.getInboundbatchnums().get(i).getInboundbatchnum());
+			listBatchNum.add(map);
+		}
+		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
+			(this, R.layout.item_wms_list,R.id.tv_wms_list, listBatchNum)
+		mListView.setAdapter(arrayAdapter);
+		mListView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// TODO Auto-generated method stub
+				 //IntentUtil.startActivity(IndexInputActivity.this,
+				//WmsInputActivity.class);
+										
+				
+			}
+		});
+		showProgressDialog("load...");
+		TaskExecutor.Execute(new NetWorkPost(this,"wms//inbound-batches", handler).setMapOfData(null, SharedUtil.getToken(this)));
+	}
+	
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+		View view = getLayoutInflater().inflate(R.layout.index_scanprint, null);
+		mLinearLayout.addView(view);
+		ViewUtils.inject(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	private Handler handler = new Handler(){
+		
+		public void handleMessage(android.os.Message msg) {
+			super.handleMessage(msg);
+			hideProgressDialog();
+			String json = msg.obj.toString();
+			try {
+				inputReponse = JSON.parseObject(json, IndexInputReponse.class);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			
+			if (inputReponse == null) {
+				  Toast.makeText(IndexInputActivity.this, "abnormal server", Toast.LENGTH_SHORT).show();
+	                return;
+			}
+			
+		};
+	};
+
+
+	
+
+}

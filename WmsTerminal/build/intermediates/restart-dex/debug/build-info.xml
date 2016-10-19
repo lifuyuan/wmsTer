@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="22"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="3278674075334"
+    token="5290302257349397974"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="2962" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+
+    <build
+        timestamp="1287223796327"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\outputs\apk\WmsTerminal-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="2407322615478"
+        verifier="DEPENDENCY_CHANGED" >
+        <artifact
+            location="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_f577f42b9e70901d699b9c6501efdaaa7ee846ad\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="3278674075334"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="D:\AndroidStudioProjects\WmsTer\WmsTerminal\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+
+</instant-run>

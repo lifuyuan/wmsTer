@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/title_bg_color">
+
+    <ImageView
+        android:id="@+id/iv_back_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:padding="@dimen/screen_control_spacing"
+        android:src="@drawable/ic_house"
+        tools:ignore="RtlSymmetry,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_title_head"
+        style="@style/Text__h1_white_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/title_text_h1" />
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        style="@style/Text_h2_black"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_lar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_title_right"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentRight="true"
+        android:padding="13dp"
+        android:visibility="gone" />
+       <ImageView
+        android:id="@+id/iv_exit_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+		android:layout_alignParentRight="true"
+        android:padding="@dimen/screen_control_spacing"
+        android:src="@drawable/ic_back"
+        tools:ignore="RtlSymmetry,RtlHardcoded" />
+</RelativeLayout>

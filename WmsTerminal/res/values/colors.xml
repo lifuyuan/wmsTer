@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- button -->
+    <color name="btn_pressed_false">#4285F4</color>
+    <color name="btn_pressed_true">#3366cc</color>
+    <color name="color_pressed">#9c000000</color>
+    <color name="ripple_color">#ffeeeeee</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 页面主背景色 -->
+    <color name="title_bg_color">#3A3B3F</color>
+    <color name="bg_color">#F8F8F8</color>
+    <color name="titleinner_bg_color">#F3F3F3</color>
+    <!-- Title颜色 -->
+    <color name="title_txt_color">#333333</color>
+
+    <!-- 项目进度字体颜色 -->
+    <color name="main_text_color">#636363</color>
+    <!-- 橘黄色  -->
+    <color name="progress_txt_color">#f99406</color>
+    <color name="progress_txtname_color">#b2b2b2</color>
+    <!-- 蓝色 -->
+    <color name="blue_line">#4285f4</color>
+    <!-- 蓝色按钮按下时颜色 -->
+    <color name="blue_pressed">#3d6cba</color>
+    <!-- 橙色按钮按下时颜色 -->
+    <color name="orange_pressed">#bd7714</color>
+    <color name="gray_text">#bcbcbc</color>
+    <color name="progress_bg_color">#e1e1e1</color>
+    <color name="content_jianjie">#636363</color>
+    <!-- 分隔线颜色 -->
+    <color name="split_line_color">#e2e2e2</color>
+
+    <!-- 收藏与评价圆角按钮背景 -->
+    <color name="control_bg_color">#ffffff</color>
+
+    <!-- 支持按钮背景色 -->
+    <color name="btn_zhichi_bg_color">#ff2d55</color>
+    <!-- 登录按钮背景色 -->
+    <color name="btn_login_bg_color">#4285F4</color>
+    <!-- 登录按钮按下时 -->
+    <color name="btn_login_pressed_color">#4241F4</color>
+    <!-- 注册按钮被按下时的 颜色 -->
+    <color name="btn_register_pressed_color">#F97706</color>
+    <!-- *******************通用颜色******************* -->
+
+    <!-- 红色 -->
+    <color name="red_main">#ff2d55</color>
+    <!-- 橙黄色 -->
+    <color name="orange_main">#f99406</color>
+    <!-- 绿色 -->
+    <color name="green_main">#85CAEF</color>
+    <!-- 灰色 -->
+    <color name="gray_main">#95A5A5</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 橙色 -->
+    <color name="orange">#FFA500</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 灰色 -->
+    <color name="ash">#929292</color>
+    <!-- 亮绿色 -->
+    <color name="lightgreen">#90EE90</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <color name="gray_line">#D1D1D1</color>
+    <!-- 深灰色 -->
+    <color name="dark_grey">#616264</color>
+    <!-- 钢兰色 -->
+    <color name="steelblue">#4682B4</color>
+    <!-- 皇家蓝 -->
+    <color name="royalblue">#4169E1</color>
+    <!-- 亮海蓝色 -->
+    <color name="lightseagreen">#20B2AA</color>
+    <!-- 闪兰色 -->
+    <color name="dodgerblue">#1E90FF</color>
+    <!-- 深蓝色 -->
+    <color name="mazarine">#16A8F3</color>
+    <!-- 深天蓝色 -->
+    <color name="deepskyblue">#00BFFF</color>
+    <!-- 淡蓝色 -->
+    <color name="babyblue">#00A9FE</color>
+    <!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!--  -->
+    <color name="gray_deep">#EEEEEE</color>
+    <!-- xxxxxxxxxxxxxxxxxx透明xxxxxxxxxxxxxxxxxx -->
+    <!-- 白色-00透明 -->
+    <color name="white_transparent">#00FFFFFF</color>
+    <!-- 黑色-60透明 -->
+    <color name="black_60">#60000000</color>
+    <!-- 主题背景色 -->
+    <color name="gray_base_backgroud">#FAFAFA</color>
+
+    <!-- 颜文字键盘 -->
+    <color name="user_detail_public_bg">#f3f3f3</color>
+    <color name="user_list_public_bg">#e5e6e7</color>
+    <color name="normal_text">#FF758493</color>
+    <color name="text_color_shenhui_677582">#677582</color>
+    <color name="text_color_qianhui_a3a4a4">#a3a4a4</color>
+    <color name="text_color_heise_504f4f">#504f4f</color>
+    <color name="text_color_baise_fffefe">#fffefe</color>
+    <color name="text_color_hongse_ff4318">#ff4318</color>
+    <color name="text_color_zhongheise_461bd4">#461bd4</color>
+    <color name="text_color_zhonghongse_461b04">#461b04</color>
+    <color name="text_color_huangse_ff8800">#ff8800</color>
+    <color name="text_color_shurukuang_aeb6bd">#aeb6bd</color>
+
+    <!-- *********************************************************************************** -->
+    <!-- 全透明 -->
+    <color name="transparency">#00000000</color>
+    <!-- 浅黑色 -->
+    <color name="blank_light">#666666</color>
+    <!-- 浅灰色 -->
+    <color name="gray_light">#b2b2b2</color>
+   
+    <!-- 红色 -->
+    <color name="red_txt">#b61d1d</color>
+    <color name="yellow_txt">#EB5701</color>
+    <!-- topbar背景色 -->
+    <color name="bg_topbar">#f9f9f9</color>
+
+    
+    <!-- PagerSlidingTabStrip -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+      <color name="scan_tab_pressed">#D5D5D5</color>
+      <color name="et_background">#CDCDCD</color>
+     <color name="myred">#eb4f38</color>
+    <color name="darkgray">#cccc</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_blue">#66B2FF</color>
+    <color name="color_gray">#CFCFCF</color>
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+</resources>

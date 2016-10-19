@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wms</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="loaddata_error">数据加载错误</string>
+
+    <!-- Dialog -->
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="hint">提示</string>
+    <string name="error_network">您的网络不好，请稍后再试</string>
+    <string name="exception_hint">异常提示</string>
+    <string name="try_again">再试一次</string>
+    <string name="close">关闭</string>
+    <string name="zhengzaijiazai">正在加载...</string>
+    <string name="yijiazaiwancheng">已加载完成</string>
+
+    <!-- 登录界面文本 -->
+    <string name="on_login">登录</string>
+    <string name="on_register">注册</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="register_hint">还没账号？立即注册</string>
+
+    <!-- 注册界面文本 -->
+    <string name="register_account">账号</string>
+    <string name="register_password">密码</string>
+    <string name="verify">验证</string>
+    <string name="register_authcode">验证码</string>
+    <string name="forgot_next">下一步</string>
+
+    <!-- 主页面   -->
+    <string name="wms">WMS</string>
+    <string name="scanprint">scanprint</string>
+    <string name="stock">stocktaking</string>
+    <string name="sao">扫一扫</string>
+    <string name="msg">消息</string>
+
+    <!-- 项目详情页 -->
+    <string name="project_support">支持</string>
+    <string name="project_to_vote">去跟投</string>
+    <string name="project_norm">限额</string>
+    <string name="project_remain">剩余</string>
+    <string name="project_shipping_amount">配送金额：</string>
+    <string name="project_scheduled_time">预计回报发送时间：</string>
+
+
+    <!-- 二维码 -->
+    <string name="scan_text">将二维码放入框内,即可自动扫描</string>
+    <string name="scan">二维码扫描</string>
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+     <string name="input_quantity">设置成功</string>
+</resources>

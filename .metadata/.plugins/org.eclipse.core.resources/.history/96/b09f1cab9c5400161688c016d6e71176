@@ -1,0 +1,107 @@
+package com.wmsterminal.activity.wms;
+
+import java.util.LinkedList;
+
+import android.graphics.Color;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+import com.wmsterminal.R;
+import com.wmsterminal.base.activity.BaseActivity;
+import com.wmsterminal.util.IntentUtil;
+
+public class WmsInputActivity extends BaseActivity implements View.OnClickListener {
+
+	@ViewInject(R.id.et_input_shelf)
+	private EditText etShelfNo;
+	
+	@ViewInject(R.id.et_input_sku)
+	private EditText etSkuNo;
+	
+	@ViewInject(R.id.tv_input_next)
+	private TextView tvNext;
+	
+	@ViewInject(R.id.tv_input_finish)
+	private TextView tvFinish;
+	
+	@ViewInject(R.id.ll_input)
+	private LinearLayout llInput;
+	
+	@ViewInject(R.id.rl_sku)
+	private RelativeLayout rlSku;
+	
+	
+	private View viewSku;
+	
+	private LinkedList<EditText> etLink;
+	
+    int i = 0;
+	
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		setTitleMessage("inbound");
+		etLink = new LinkedList<EditText>();
+		
+	}
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+		View view =getLayoutInflater().inflate(R.layout.wms_input, null);
+		mLinearLayout.addView(view);
+        //llInput.addView(viewSku);
+		ViewUtils.inject(this);
+		viewSku = getLayoutInflater().inflate(R.layout.item_skuno,null);
+        llInput.addView(viewSku);
+        //etSkuNo = (EditText) findViewById(R.id.et_input_sku);
+        //etLink.add(0, etSkuNo);
+       
+	}
+	
+	@OnClick({R.id.tv_input_next,R.id.tv_input_finish})
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.tv_input_next:
+			/*TextView tv = new TextView(getApplicationContext());
+	        tv.setText("input SKU No");
+	        tv.setBackgroundColor(Color.BLACK);
+	        tv.setGravity(Gravity.CENTER);
+	        */
+	        //EditText et = new EditText(getApplicationContext());
+	        //et.setHint("ddd");
+	        //llInput.addView(tv);
+			etSkuNo = (EditText) this.findViewById(R.id.et_input_sku);
+			etSkuNo.setId(i);
+			//etLink.add(i, etSkuNo);
+			String name = etSkuNo.getText().toString().trim();
+			//String name = etLink.get(i).getText().toString().trim();
+			Toast.makeText(this, name, Toast.LENGTH_LONG).show(); 
+			View viewS = getLayoutInflater().inflate(R.layout.item_skuno,null);
+	        //etSkuNo = (EditText) findViewById(R.id.et_input_sku);
+	        llInput.addView(viewS);
+	        i++;
+	        //etLink.add(i, etSkuNo);
+	        break;
+
+		case R.id.tv_input_finish:
+			
+			//IntentUtil.startActivity(this,WmsInputFailureActivity.class);
+			break;
+		default:
+			break;
+		}
+	}
+
+}

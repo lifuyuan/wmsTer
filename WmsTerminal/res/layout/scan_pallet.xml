@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:id="@+id/ll_input1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="53dp"
+        >
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="PalletNum. :"
+        android:textColor="@color/blank_light"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+         />
+    
+    <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_palletno_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        />
+    </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+        />
+     
+     <RelativeLayout
+        android:id="@+id/rl_sku"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#DCDCDC"
+        >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="ParcelNum 1. :"
+        android:textColor="@color/blank_light" 
+        android:background="#DCDCDC"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+        />
+    
+    <com.wmsterminal.common.view.ClearableEditText 
+        android:id="@+id/et_parcelnum_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:hint="input box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_light"
+        android:textSize="12dp"
+        android:singleLine="true"
+        app:clearBtnDrawable="@drawable/common_input_box_clear"
+        app:clearBtnDrawableHeight="20dp"
+        app:clearBtnDrawableWidth="20dp"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" 
+       />
+   
+    <LinearLayout 
+        android:id="@+id/ll_pallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ 		android:orientation="vertical"
+        ></LinearLayout>
+ 
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+            >
+        <TextView 
+        android:id="@+id/tv_ptdelete_scan"
+        android:layout_width="65dip"
+        android:layout_height="35dip"
+        android:text="remove"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/screen_control_spacing"
+        android:layout_marginTop="@dimen/screen_control_spacing"
+		android:layout_alignParentRight="true"
+	    android:background="@color/scan_tab_pressed"
+        />
+        </RelativeLayout>
+         <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+            >
+        <TextView 
+        android:id="@+id/tv_ptsubmit_scan"
+        android:layout_width="65dip"
+        android:layout_height="35dip"
+        android:text="submit"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/screen_control_spacing"
+        android:layout_marginTop="@dimen/screen_control_spacing"
+	    android:background="@color/scan_tab_pressed"
+        />             
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+
+                  
+</LinearLayout>
+ </ScrollView>

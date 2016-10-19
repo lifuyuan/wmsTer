@@ -1,0 +1,228 @@
+package com.wmsterminal.activity;
+
+import android.annotation.SuppressLint;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.text.InputType;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.wmsterminal.R;
+import com.wmsterminal.activity.MainActivity;
+
+import com.wmsterminal.base.BaseApplication;
+import com.wmsterminal.base.activity.BaseResourcesActivity;
+import com.wmsterminal.common.thread.NetWorkPost;
+import com.wmsterminal.common.thread.TaskExecutor;
+import com.wmsterminal.model.Login;
+import com.wmsterminal.model.User;
+import com.wmsterminal.model.LoginDTO;
+import com.wmsterminal.model.UserResponse;
+import com.wmsterminal.util.IntentUtil;
+import com.wmsterminal.util.ObjectUtil;
+import com.wmsterminal.util.RequestUtil;
+import com.wmsterminal.util.SharedUtil;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import cn.jpush.android.api.JPushInterface;
+
+/**
+ * Created by shuhaiyang on 2015/11/25.
+ */
+@SuppressLint("HandlerLeak")
+public class LoginActivity extends BaseResourcesActivity implements View.OnClickListener {
+
+    private boolean isHidden = true;
+    @ViewInject(R.id.input_login_account)
+    private EditText mEtAccount;
+
+    @ViewInject(R.id.input_login_password)
+    private EditText mEtPassword;
+
+    @ViewInject(R.id.img_input_show)
+    private ImageView mIvShow;
+
+    @ViewInject(R.id.btn_login)
+    private Button mBtnLogin;
+
+    @ViewInject(R.id.tv_to_reg)
+    private TextView toReg;
+
+    public static boolean isForeground = false;
+    
+    private static Boolean isQuit = false;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        //initView();
+        initSet();
+        ViewUtils.inject(this);
+        mEtAccount.setText(SharedUtil.getUser(this, "name"));
+        mEtPassword.setText(SharedUtil.getUser(this, "pass"));
+    }
+
+    private void initSet() {
+    }
+
+    @Override
+   /* protected void onResume() {
+        super.onResume();
+        //JPushInterface.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //JPushInterface.onPause(this);
+    }*/
+
+    @OnClick({R.id.tv_to_reg, R.id.img_input_show, R.id.btn_login})
+    
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.tv_to_reg:
+                //IntentUtil.startActivity(LoginActivity.this, TextActivity.class);
+                break;
+          
+            case R.id.img_input_show:
+                if (isHidden) {
+                    mEtPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                } else {
+                    mEtPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+                isHidden = !isHidden;
+                break;
+            case R.id.btn_login:
+                 String username = mEtAccount.getText().toString().trim();
+                 String password = mEtPassword.getText().toString().trim();
+                
+            	if (isFastDoubleClick()) {
+                    return;
+                }
+                if (checkData(username, password)) {
+                    showProgressDialog("正在登录...");
+
+                    Map<String,String> userMap = new HashMap<>();
+                    userMap.put("password", password);
+                    userMap.put("email", username);
+					
+                    Login login = new Login();
+                    login.setEmail(username);
+                    login.setPassword(password);
+                   // Map<String, String> map = RequestUtil.requByJson("reqJson", login);
+                    //Loge("getUser.wms", map.get("reqJson"));
+                   
+                    TaskExecutor.Execute(new NetWorkPost(this, "wms/user-authentication/login", handler).setMapOfData(userMap));
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * 检查数据是否为空
+     *
+     * @param account
+     * @param psw
+     * @return
+     */
+    private boolean checkData(String account, String psw) {
+        if (ObjectUtil.isEmpty(account)) {
+            mEtAccount.setError("账号不能为空");
+            return false;
+        } else if (ObjectUtil.isEmpty(psw)) {
+            mEtPassword.setError("密码不能为空");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            hideProgressDialog();
+            String json = msg.obj.toString();
+            UserResponse userRes = null;
+            try {
+                userRes = JSON.parseObject(json, UserResponse.class);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            if (userRes == null) {
+                Toast.makeText(LoginActivity.this, "服务器异常", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (userRes.getStatus().equals("success")) {
+            	
+                User user = new User();
+                user.setUsername(mEtAccount.getText().toString().trim());
+                user.setPassword(mEtPassword.getText().toString().trim());
+                user.setToken(userRes.getToken());
+                SharedUtil.saveUser(LoginActivity.this, user);
+                IntentUtil.startActivity(LoginActivity.this, MainActivity.class);
+                finish();
+            } else {
+                showError(userRes.getReason());
+            }
+        }
+    };
+    
+    Handler backHandler = new Handler(){
+    	
+    	public void HandleMessage(Message msg){
+    		super.handleMessage(msg);
+    		isQuit = false;
+    	}
+    };
+    
+    /*public boolean onKeyDown(int keyCode, KeyEvent event) {
+    	if(keyCode == KeyEvent.KEYCODE_BACK){
+    		if(!isQuit){
+    			isQuit = true;
+    			Toast.makeText(this, "再按一次返回键退出程序", Toast.LENGTH_SHORT).show();
+    			backHandler.sendEmptyMessageDelayed(0, 2000);
+    		}
+    	}else {
+    		finish();
+    		System.exit(0);
+    	}
+		return false;
+    }*/
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			if (!isQuit) {
+				isQuit = true;
+				Toast.makeText(getApplicationContext(), "再按一次退出程序",Toast.LENGTH_SHORT).show();
+				// 利用handler延迟发送更改状态信息
+				backHandler.sendEmptyMessageDelayed(0, 2000);
+			} else {
+				finish();
+				//finishAndRemove();
+				System.exit(0);
+				
+			}
+		}
+		return false;
+	}
+   
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wmsterminal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    
+     <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.wmsterminal.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wmsterminal.activity.LoginActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask"
+            >
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wmsterminal.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmsterminal.activity.IndexContentActivity"
+            android:screenOrientation="portrait" 
+         />
+        <activity 
+            android:name="com.wmsterminal.activity.ScanSeparateActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.wmsterminal.activity.wms.WmsInputActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.wmsterminal.activity.wms.WmsInputFailureActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+         <activity 
+            android:name="com.wmsterminal.activity.wms.WmsOutputActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+         <activity 
+            android:name="com.wmsterminal.activity.scan.ScanReturnParcelActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+           <activity 
+            android:name="com.wmsterminal.activity.scan.CheckShipmentActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+           <activity 
+               android:name="com.wmsterminal.activity.scan.ReleasePalletActivity"
+               android:screenOrientation="portrait"
+               ></activity>
+            <activity 
+               android:name="com.wmsterminal.activity.scan.PalletActivity"
+               android:screenOrientation="portrait"
+               ></activity>
+            <activity 
+                android:name="com.wmsterminal.activity.wms.IndexInputActivity"
+                android:screenOrientation="portrait"
+                ></activity>
+                 <activity 
+           	android:name="com.wmsterminal.activity.wms.QueryOutBoundActivity"
+                android:screenOrientation="portrait"
+                ></activity>
+             <activity                  
+           	android:name="com.wmsterminal.activity.wms.QueryWavsActivity"
+                android:screenOrientation="portrait"
+                ></activity> 
+                <activity                  
+           	android:name="com.wmsterminal.activity.wms.UpDateWavsActivity"
+                android:screenOrientation="portrait"
+                >                       
+                </activity> 
+                <activity                  
+           	android:name="com.wmsterminal.activity.wms.QueryStokeActivity"
+                android:screenOrientation="portrait"
+                >                       
+                </activity>   
+                  <activity                  
+           	android:name="com.wmsterminal.activity.wms.UpDataStokeActivity"
+                android:screenOrientation="portrait"
+                >                       
+                </activity>
+                
+             <activity                  
+           	android:name="com.wmsterminal.activity.wms.ShelfNumListActivity"
+                android:screenOrientation="portrait"
+                >                       
+                </activity>      
+            <activity                  
+           	android:name="com.wmsterminal.activity.wms.UpDateOutBoundActivity"
+                android:screenOrientation="portrait"
+                >                       
+            </activity>            
+                          
+                      
+    </application>
+
+</manifest>

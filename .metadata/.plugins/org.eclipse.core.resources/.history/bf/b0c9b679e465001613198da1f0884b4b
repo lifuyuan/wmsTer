@@ -1,0 +1,6 @@
+package com.wmsterminal.model;
+
+public class IndexInputRequest {
+	
+
+}

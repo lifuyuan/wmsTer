@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/base_header"
+        android:name="com.wmsterminal.common.fragment.HeaderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_google" />
+
+    <LinearLayout
+        android:id="@+id/base_headere"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_google"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"></LinearLayout>
+
+    <fragment
+        android:id="@+id/base_footer"
+        android:name="com.wmsterminal.common.fragment.FooterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_of_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/base_footer"
+        android:layout_below="@id/base_header"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

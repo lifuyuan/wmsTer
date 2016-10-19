@@ -1,0 +1,41 @@
+package com.wmsterminal.activity.wms;
+
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.wmsterminal.R;
+import com.wmsterminal.base.activity.BaseActivity;
+
+public class IndexInputActivity extends BaseActivity {
+	
+	@ViewInject(R.id.lv_scanprint)
+	private ListView mListView;
+	
+	String [] arg = new String[]{"1","2","3"};
+	private Object tv_wms_list;
+	
+	@Override
+	protected void initSet() {
+		// TODO Auto-generated method stub
+		super.initSet();
+		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
+			(this, R.layout.item_wms_list, arg);
+		mListView.setAdapter(arrayAdapter);
+		
+	}
+	
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+		super.initView();
+		View view = getLayoutInflater().inflate(R.layout.index_scanprint, null);
+		mLinearLayout.addView(view);
+		ViewUtils.inject(this);
+	}
+	
+	
+
+}

@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer.zhy_pulltorefreash_chenyoca\\base_library_pullToRefresh_chenyoca\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_output.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_output.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_updataoutbound_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_updataoutbound_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\activity_index_content.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\activity_index_content.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\cube_ptr_classic_default_header.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\scan_releasepallet.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\scan_releasepallet.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\base_title.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\base_title.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_input.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_input.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_upout.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_upout.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_ordernum_addview.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_ordernum_addview.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\base_activity.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\base_activity.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_skuno_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_skuno_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\index_wms.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\index_wms.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\fragment_dash.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\fragment_dash.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\base_activity_footer.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\base_activity_footer.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\base_header.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\base_header.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\scan_chshipment.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\scan_chshipment.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\index_stocktaking.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\index_stocktaking.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_wavs_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_wavs_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\scan_reparcel.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\scan_reparcel.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\fragment_footer.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\fragment_footer.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\cube_views_load_more_default_footer.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\layout\\cube_views_load_more_default_footer.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\index_scanprint.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\index_scanprint.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_shelfnum_addview.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_shelfnum_addview.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_updatewavs.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_updatewavs.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_input_failure.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_input_failure.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\cube_ptr_simple_loading.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer\\ptr_sdk\\unspecified\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_wms_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_wms_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_updatashelf_addview.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_updatashelf_addview.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\activity_login.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\line_no_margin.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\line_no_margin.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\scan_pallet.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\scan_pallet.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_skuno_list_two.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_skuno_list_two.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_output_failure.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_output_failure.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_scanprint_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_scanprint_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\item_common_list.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\item_common_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\activity_main.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer.zhy_pulltorefreash_chenyoca\\base_library_pullToRefresh_chenyoca\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\wms_shelflist.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\res\\layout\\wms_shelflist.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header.xml",
+        "source": "D:\\AndroidStudioProjects\\WmsTer\\WmsTerminal\\build\\intermediates\\exploded-aar\\WmsTer.zhy_pulltorefreash_chenyoca\\base_library_pullToRefresh_chenyoca\\unspecified\\res\\layout\\pull_to_refresh_header.xml"
+    }
+]
